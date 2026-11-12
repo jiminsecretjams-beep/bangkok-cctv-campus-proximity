@@ -78,6 +78,25 @@ Browser preview permission was declined. JavaScript syntax and output consistenc
 
 After the user requested the preview again, the tool reported a saved permission or managed policy blocking the local origin. The visual check remains unperformed. To inspect it yourself, double-click `reports/campus_proximity_map.html`. The data review was completed independently of the browser restriction.
 
+## Join completed traffic counts to campus flags
+
+Download the completed [traffic and campus analysis handoff](https://github.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/releases/tag/analysis-campus-traffic-20260825-20260831-v1). Extract its ZIP to get the full 61,319-row CSV/Parquet table, the 59,834-row temporal-eligible Parquet subset, camera/hourly coverage, calendar evidence, data dictionary and validation/provenance reports. These are derived results; original CCTV images, weights, environments and checkpoints are excluded. The four original processing-batch ZIPs remain in their separate GitHub Releases.
+
+The code is in this repository; large generated analysis tables are distributed through the Release asset. To recreate the join, use the [pinned processing environment and import instructions](https://github.com/Panyawat-Phothiphanich/bangkok-cctv-campus-proximity/blob/a0128c67985bd3e6f92d1e28f8f671dfc6c8a8a3/processing/README.md) with the original combined traffic import. Downloading and using the completed joined dataset does not require rerunning image inference.
+
+After all four whole-image processing batches are imported, build the downstream analysis handoff with the existing frozen worker environment:
+
+```sh
+bangkok-cctv-worker-batch-01/processing/.venv/bin/python scripts/build_analysis_dataset.py
+bangkok-cctv-worker-batch-01/processing/.venv/bin/python -m unittest discover -s tests/analysis -v
+```
+
+The default input is the completed local combined job `whole-image-f4ba6aa4fcd2ca80`; use `--traffic-folder` for another verified import location. Outputs are under `data/analysis/campus_traffic/`, excluded from Git because they contain the full observation dataset. The builder preserves all original traffic rows, counts, nulls, time fields, quality flags and batch provenance, and enforces a many-to-one join to the 100-row campus dimension. It does not rerun inference or modify the frozen processing checkout. An identical rerun verifies existing output checksums; different inputs/code require a fresh `--output` path.
+
+The handoff contains Parquet/CSV observations, the original temporal-eligible subset, camera coverage, hourly snapshot means/medians with missing-hour coverage, supplied calendar evidence, a dictionary and validation/provenance manifests. Camera metadata uses `camera_` names and campus reference fields use `campus_` names. No camera IP addresses are copied into the analysis table.
+
+The capture period is 25–31 August 2026. The supplied calendar is Chula BBA International programme evidence, not a verified calendar for every camera's nearby institutions; `teaching_day` remains unknown. Weekday/weekend fields describe Bangkok calendar dates only. All cameras have a nearby recorded school, and the higher-education comparison fields retain the original boundary/threshold/catalog cautions. Snapshot counts include parked vehicles and do not establish traffic flow or campus causality. See the generated handoff README and validation report for coverage and limitations.
+
 ## Attribution
 
 Camera data: supplied course Google Drive metadata. School data: web scraping team handoff, with source paths/years retained. OpenStreetMap data: **© OpenStreetMap contributors**, [ODbL](https://opendatacommons.org/licenses/odbl/1-0/), [copyright and attribution](https://www.openstreetmap.org/copyright). Review source terms before redistributing the combined reference.
