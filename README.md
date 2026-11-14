@@ -80,7 +80,7 @@ After the user requested the preview again, the tool reported a saved permission
 
 ## Join completed traffic counts to campus flags
 
-Download the completed [traffic and campus analysis handoff](https://github.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/releases/tag/analysis-campus-traffic-20260825-20260831-v1). Extract its ZIP to get the full 61,319-row CSV/Parquet table, the 59,834-row temporal-eligible Parquet subset, camera/hourly coverage, calendar evidence, data dictionary and validation/provenance reports. These are derived results; original CCTV images, weights, environments and checkpoints are excluded. The four original processing-batch ZIPs remain in their separate GitHub Releases.
+Download the completed [traffic and campus analysis handoff with public-holiday reference flags (v2)](https://github.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/releases/tag/analysis-campus-traffic-20260825-20260831-v2). Extract its ZIP to get the full 61,319-row CSV/Parquet table, the 59,834-row temporal-eligible Parquet subset, camera/hourly coverage, calendar and public-holiday evidence, data dictionary and validation/provenance reports. These are derived results; original CCTV images, weights, environments and checkpoints are excluded. The [original v1 handoff](https://github.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/releases/tag/analysis-campus-traffic-20260825-20260831-v1) and four original processing-batch ZIPs remain available.
 
 The code is in this repository; large generated analysis tables are distributed through the Release asset. To recreate the join, use the [pinned processing environment and import instructions](https://github.com/Panyawat-Phothiphanich/bangkok-cctv-campus-proximity/blob/a0128c67985bd3e6f92d1e28f8f671dfc6c8a8a3/processing/README.md) with the original combined traffic import. Downloading and using the completed joined dataset does not require rerunning image inference.
 
@@ -88,6 +88,7 @@ After all four whole-image processing batches are imported, build the downstream
 
 ```sh
 bangkok-cctv-worker-batch-01/processing/.venv/bin/python scripts/build_analysis_dataset.py
+bangkok-cctv-worker-batch-01/processing/.venv/bin/python scripts/add_public_holidays.py
 bangkok-cctv-worker-batch-01/processing/.venv/bin/python -m unittest discover -s tests/analysis -v
 ```
 
@@ -96,6 +97,12 @@ The default input is the completed local combined job `whole-image-f4ba6aa4fcd2c
 The handoff contains Parquet/CSV observations, the original temporal-eligible subset, camera coverage, hourly snapshot means/medians with missing-hour coverage, supplied calendar evidence, a dictionary and validation/provenance manifests. Camera metadata uses `camera_` names and campus reference fields use `campus_` names. No camera IP addresses are copied into the analysis table.
 
 The capture period is 25–31 August 2026. The supplied calendar is Chula BBA International programme evidence, not a verified calendar for every camera's nearby institutions; `teaching_day` remains unknown. Weekday/weekend fields describe Bangkok calendar dates only. All cameras have a nearby recorded school, and the higher-education comparison fields retain the original boundary/threshold/catalog cautions. Snapshot counts include parked vehicles and do not establish traffic flow or campus causality. See the generated handoff README and validation report for coverage and limitations.
+
+### Final web scraping handoff: public holidays
+
+The friend's unchanged `03_public_holidays.py` is preserved under `data/raw/webscraping/scripts/`. Its output contains 46 reference records (24 in 2025, 22 in 2026). The JSON snapshot, commit-pinned source URL, source/script hashes and review notes are under `data/reference/public_holidays/`. The source advertises `last_updated: 2025-02-20`; its official-source attribution does not establish that this third-party mirror is a complete, current official calendar.
+
+The offline holiday builder writes a separate `data/analysis/campus_traffic_holidays_v2/` handoff. `public_holiday_listed`, `public_holiday_names` and `public_holiday_reference_status` record membership in the supplied reference. Unsupported years/dates remain unknown; multiple events on one date are grouped before joining. All original observation fields and v1 files remain unchanged. No listed holiday overlaps the captured week, so these images cannot supply a public-holiday traffic comparison. Public holidays do not establish campus-specific teaching days; `teaching_day` stays unknown.
 
 ## Attribution
 

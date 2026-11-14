@@ -1,0 +1,33 @@
+{
+  "status": "validated_reference_import",
+  "retrieved_at": "2026-11-14T18:56:59.596336+00:00",
+  "script_path": "data/raw/webscraping/scripts/03_public_holidays.py",
+  "script_sha256": "7ee14aa69763dbe0c32d934c3b3ce75624ce196f6be0eac0ced4820c4394012e",
+  "source_url": "https://raw.githubusercontent.com/ppraserts/thailand-open-data/main/data/thai-public-holidays/all.json",
+  "pinned_source_url": "https://raw.githubusercontent.com/ppraserts/thailand-open-data/4ab30934cd7ac800e42faa8ebc4a848ae7b69033/data/thai-public-holidays/all.json",
+  "source_commit": "4ab30934cd7ac800e42faa8ebc4a848ae7b69033",
+  "snapshot_sha256": "3a4efb2f9e03da78636082de4a921635bb2299cf396597bec0755cc21cded693",
+  "source_claim": "Royal Thai Government Gazette / Digital Government Development Agency (DGA)",
+  "source_last_updated": "2025-02-20",
+  "available_years": [
+    2025,
+    2026
+  ],
+  "rows": 46,
+  "rows_by_year": {
+    "2025": 24,
+    "2026": 22
+  },
+  "capture_period": [
+    "2026-08-25",
+    "2026-08-31"
+  ],
+  "listed_holiday_dates_in_capture_period": [],
+  "verification_status": "third_party_reference_not_independently_verified_as_complete_official_calendar",
+  "limitations": [
+    "Public holidays do not establish institution-specific teaching or closure days.",
+    "No listed holiday falls in the CCTV capture period; holiday-versus-nonholiday traffic comparison is unavailable.",
+    "The source advertises last_updated 2025-02-20. Its coverage and current completeness must not be inferred from its official-source attribution.",
+    "The original script assumes it resides in a scripts/ folder. It was preserved there; running it from Downloads would target a different output directory."
+  ]
+}
