@@ -1,0 +1,35 @@
+[project]
+name = "bkk-cctv"
+version = "0.1.0"
+description = "Reproducible Bangkok CCTV snapshot engineering pipeline"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "numpy>=1.26,<3", "pandas>=2.2,<3", "pyarrow>=17,<24",
+  "duckdb>=1.2,<3", "Pillow>=10,<13", "opencv-python>=4.10,<5",
+  "pydantic>=2.9,<3", "PyYAML>=6,<7", "shapely>=2,<3",
+  "ultralytics>=8.3,<9", "torch>=2.4,<3", "gdown>=5,<6",
+  "psutil>=5.9,<8",
+  "matplotlib>=3.9,<4",
+]
+
+[project.optional-dependencies]
+strongest = ["transformers>=5.3,<6", "safetensors>=0.5,<1"]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.9,<1"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bkk_cctv"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

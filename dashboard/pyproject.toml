@@ -1,0 +1,25 @@
+[project]
+name = "bangkok-school-zone-dashboard"
+version = "1.0.0"
+description = "Interactive dashboard for the frozen Bangkok CCTV campus study"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "streamlit==1.51.0",
+  "pandas==2.3.3",
+  "numpy>=2.2,<3",
+  "pyarrow>=21,<24",
+  "altair>=5.5,<6",
+  "pydeck>=0.9,<1",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.9,<1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

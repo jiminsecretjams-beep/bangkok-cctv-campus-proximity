@@ -1,0 +1,69 @@
+schema_version: 1
+project_root: ..
+source:
+  archive: data/raw/cctv_images.zip
+  metadata: data/raw/cctv_info.csv
+  timezone: Asia/Bangkok
+  filename_regex: ^(?P<camera_id>\d+)_.*_(?P<timestamp>\d{8}_\d{6})\.jpg$
+  timestamp_format: '%Y%m%d_%H%M%S'
+  timestamp_verified: true
+  acquisition_verified: true
+  time_basis: acquired
+  verification_note: Filename camera IDs match folder IDs and metadata. Filename dates
+    match inspected image overlays; e.g. camera 1060 overlay 25 Aug 2026 06:10:38,
+    filename 20260825_061041. Use file collection time, not exact exposure time. Unique
+    camera-second acquisitions checked by inventory; conflicting content is blocked.
+  cameras: []
+  max_images_per_camera: null
+  max_uncompressed_gb: 15.0
+detector:
+  backend: ultralytics
+  weights: models/yolo26x.pt
+  weights_sha256: 9fdd44a31c504547ffb81d2c6d9e6dac3493c8eaa8b0398d3f43bae6c7003e92
+  auxiliary_sha256: {}
+  model_revision: ultralytics/assets@v8.4.0
+  device: mps
+  mps_memory_fraction: 0.3
+  agnostic_nms: true
+  input_size: 960
+  batch_size: 1
+  retain_confidence_min: 0.1
+  iou: 0.5
+  max_detections: 1000
+  max_attempts: 2
+quality:
+  diagnostic_width: 320
+  min_width: 160
+  min_height: 120
+  blank_fraction: 0.99
+  blank_std: 4.0
+  dark_pixel_max: 20
+  bright_pixel_min: 245
+  dark_review_fraction: 0.8
+  low_luma_review_threshold: 70.0
+  glare_review_fraction: 0.55
+  blur_review_threshold: 8.0
+  test_pattern_min_score: 0.88
+  frozen_min_frames: 3
+  frozen_min_seconds: 600.0
+  frozen_max_gap_seconds: 7200.0
+  similarity_review: 0.995
+  night_validated: false
+validation:
+  status: provisional
+  labels: null
+  split_manifest: null
+  minimum_evaluation_images: 150
+  maximum_mae: null
+  maximum_absolute_bias: null
+  maximum_false_acceptance: null
+  maximum_false_rejection: null
+  scope: []
+regions: configs/no_regions.json
+overrides: configs/reviews.jsonl
+count_thresholds:
+  car: 0.25
+  motorcycle: 0.25
+  bus: 0.25
+  truck: 0.25
+seed: 20261108

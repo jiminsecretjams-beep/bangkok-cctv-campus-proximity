@@ -1,0 +1,68 @@
+{
+  "images": 61319,
+  "cameras": 100,
+  "usable_images": 59834,
+  "balanced_comparison_cameras": 89,
+  "sampled_location_clusters": 81,
+  "primary_hours": "07:00-17:00 collection time; primary periods use eight fixed clock hours",
+  "accepted_hour_cells": 10037,
+  "total_hour_cells": 10500,
+  "all_cameras_near_school": true,
+  "cameras_also_near_university_college": 94,
+  "excluded_non_general_school_records": 6,
+  "cameras_with_screened_school_within_1500m": 100,
+  "public_holiday_dates": 0,
+  "matched_hours_cameras": 99,
+  "primary_periods": [
+    {
+      "variant": "primary_balanced_days",
+      "period": "afternoon_15_17",
+      "n_cameras": 89,
+      "median_relative_pct": 28.676470588235304,
+      "q25_pct": 13.887554060547803,
+      "q75_pct": 52.13675213675211,
+      "positive_cameras": 82,
+      "common_primary_cameras": 89,
+      "common_primary_median_pct": 28.676470588235304,
+      "status": "estimated"
+    },
+    {
+      "variant": "primary_balanced_days",
+      "period": "midday_10_14",
+      "n_cameras": 89,
+      "median_relative_pct": 0.8773234200743385,
+      "q25_pct": -8.566978193146413,
+      "q75_pct": 11.34751773049647,
+      "positive_cameras": 46,
+      "common_primary_cameras": 89,
+      "common_primary_median_pct": 0.8773234200743385,
+      "status": "estimated"
+    },
+    {
+      "variant": "primary_balanced_days",
+      "period": "morning_07_09",
+      "n_cameras": 89,
+      "median_relative_pct": 61.159169550173,
+      "q25_pct": 35.7142857142857,
+      "q75_pct": 100.32414910858995,
+      "positive_cameras": 85,
+      "common_primary_cameras": 89,
+      "common_primary_median_pct": 61.159169550173,
+      "status": "estimated"
+    }
+  ],
+  "median_morning_specific_excess_pct": 58.80370666785231,
+  "proximity_rank_correlation": 0.20312386090252968,
+  "discovery_peak_candidates": 57,
+  "candidates_with_monday_check": 57,
+  "monday_direction_repeated": 48,
+  "excluded_clock_cameras": [
+    "1368",
+    "139",
+    "150",
+    "546"
+  ],
+  "independent_accuracy_established": false,
+  "image_inference_executed": false,
+  "random_seed": 20261114
+}

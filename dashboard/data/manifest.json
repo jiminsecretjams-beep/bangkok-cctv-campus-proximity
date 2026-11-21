@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "dataset_id": "bangkok-school-zone-20260825-31-v1",
+  "dates": [
+    "2026-08-25",
+    "2026-08-26",
+    "2026-08-27",
+    "2026-08-28",
+    "2026-08-29",
+    "2026-08-30",
+    "2026-08-31"
+  ],
+  "images": 61319,
+  "cameras": 100,
+  "usable_images": 59834,
+  "hour_cells": 10500,
+  "source_hashes": {
+    "Bangkok_CCTV_Project/reports/traffic_insights_20261114/balanced_camera_day_period.csv": "8dca701fe606231dda20197c7e7de6d9a8738a14cbed853d486e6a3e7a9d1602",
+    "Bangkok_CCTV_Project/reports/traffic_insights_20261114/camera_context.csv": "bd06789a470e58d993f06bb9976fac12acd0eca5a229c7fe76e572ea93567cf6",
+    "Bangkok_CCTV_Project/reports/traffic_insights_20261114/camera_eligibility.csv": "e0d0a0ec7c6ad1ab3d84c5fcedb37afc701084048ac5830a9bef7dab5862418b",
+    "Bangkok_CCTV_Project/reports/traffic_insights_20261114/camera_period_comparisons.csv": "ed4cdab5cd01a0b69332ce1a1cc82701b1415303a47166b8cd05b18035313236",
+    "Bangkok_CCTV_Project/reports/traffic_insights_20261114/school_anchor_daily_sensitivity.csv": "69b65721c0d655c5c88e6a6fdf3a382496f15fc664b323c28e232746dc864e6a",
+    "Bangkok_CCTV_Project/reports/traffic_insights_20261114/sensitivity_checks.csv": "10fcbf79b865ba4d283d1954145ca256371b35c7a405b5f93c48a218d13aea71",
+    "Bangkok_CCTV_Project/reports/traffic_insights_20261114/weekday_peak_holdout.csv": "98f10cb5072214485475bb0013f067d9202e995725ece4b5694d98f7563d9ed7",
+    "Bangkok_CCTV_Project/reports/traffic_insights_20261114/vehicle_class_comparisons.csv": "0a4e3c2f57a013cb64ff9aa8948fd917cd900bc159a020487e7da7eb1637eb4a",
+    "Bangkok_CCTV_Project/reports/traffic_insights_20261114/camera_day_hour.parquet": "e022e6d0efd33e6ff5fb12fa319cfc7ba4b09e17125efc0b3941472b8c633939",
+    "Bangkok_CCTV_Project/reports/academic_calendar_20261114/observations_with_calendar.parquet": "dcc09dbf59da404ae2261416b1e9088fe25c2e4f73a2b66ff0033314703f1f50",
+    "Bangkok_CCTV_Project/reports/academic_calendar_20261114/date_labels.csv": "7c3cd8adddc69bb8b4d13bf607ada6ebe24c8114a4e7d1c1c1ac96b613e548c1",
+    "Bangkok_CCTV_Project/reports/academic_calendar_20261114/institution_scope_calendar_daily.csv": "1764dd69c1046a2c2e5120cbfc37d71ab4b34dc2ece5bf631e9a7b026f43364b",
+    "Bangkok_CCTV_Project/reports/academic_calendar_20261114/camera_calendar_daily.csv": "ad60bfb420112527ddcc1148a7d7e63e99ffaf9aa2a727cb568f4497302a1ca3",
+    "bangkok-cctv-campus-proximity/data/processed/institutions_clean.csv": "baaae0537b81d971f4cc1407c2155d8cd1d939e9203646943c53aa3e715c719c",
+    "bangkok-cctv-campus-proximity/data/processed/camera_institution_matches.csv": "66e79e47a3b1bcb317214fadefafe6d36b1deab23ba8e2d202875fc101779e75",
+    "Bangkok_CCTV_Project/reports/traffic_insights_20261114/summary.json": "37120443df98b49f6740d8d9eca90255f6357399a6d5928fcf4d212e9670b0d7",
+    "Bangkok_CCTV_Project/reports/traffic_insights_20261114/insight_cards.json": "ffecb5f6cc3a1de0d1a566dec92710544c81e136673a5ec454b62da5026e931c",
+    "Bangkok_CCTV_Project/reports/academic_calendar_20261114/rules.json": "a6182bf3f35c823a7b2b3579ddfde8a2106bd8f231166f995f48f14ad17a3428",
+    "Bangkok_CCTV_Project/reports/academic_calendar_20261114/reviewed_sources.json": "93f4692aa1d1eb516f320e3cbc9089477997db7c4dbfe10bc00fccb55c72c1a0",
+    "Bangkok_CCTV_Project/reports/traffic_insights_20261114/independent_verification.json": "1b1b599c8395eea3be01b780761e97d9560e7b86b1369f85806345ccce37f119"
+  },
+  "files": {
+    "hourly.parquet": {
+      "bytes": 217134,
+      "sha256": "43facd33c1be7aeb5a321c63667d083edd7c2a22fb13a0a225c7c34f5b1c952e"
+    },
+    "summary.json": {
+      "bytes": 2106,
+      "sha256": "37120443df98b49f6740d8d9eca90255f6357399a6d5928fcf4d212e9670b0d7"
+    },
+    "sources.json": {
+      "bytes": 2390,
+      "sha256": "93f4692aa1d1eb516f320e3cbc9089477997db7c4dbfe10bc00fccb55c72c1a0"
+    },
+    "anchors.parquet": {
+      "bytes": 35867,
+      "sha256": "985fb2dd3110bfc5f3b3e870019ecb4203325cdd9d40f57b7d69cd94f06c0676"
+    },
+    "sensitivity.parquet": {
+      "bytes": 9162,
+      "sha256": "a040681e454ee715c27cb32eaf9a43d3e338edc33fe79ac6f9856406ad5935ef"
+    },
+    "calendar.parquet": {
+      "bytes": 66026,
+      "sha256": "3d90cfadf08724fff61cf81068c0d516bbdb4eba54f94179f1dcfa9bad2e2cf5"
+    },
+    "daily.parquet": {
+      "bytes": 28132,
+      "sha256": "f8db8400beb8f0468d65228112aaa02d058b79f829d1cc808788fd1e3f87e509"
+    },
+    "insights.json": {
+      "bytes": 2539,
+      "sha256": "ffecb5f6cc3a1de0d1a566dec92710544c81e136673a5ec454b62da5026e931c"
+    },
+    "dates.parquet": {
+      "bytes": 7054,
+      "sha256": "a085c0ff355552f596b86736cb0d7336cae6ff4cd5bf3fa235562f2102037208"
+    },
+    "class_summary.parquet": {
+      "bytes": 6851,
+      "sha256": "f3733bd7ba8fc2e3e3cd4417b7ad2b3749fb51e06e5fdb589290143b9955469e"
+    },
+    "institutions.parquet": {
+      "bytes": 64354,
+      "sha256": "136f454e9af6b35e8fd473e849737142f32cc18bd165defcbf1558da0574d82e"
+    },
+    "frozen_periods.parquet": {
+      "bytes": 50051,
+      "sha256": "fa0e1489ff7cd0f1f614bfb4d0df053a28d54950c97dd5e9e83b7374f7f548c5"
+    },
+    "frames.parquet": {
+      "bytes": 2770726,
+      "sha256": "c4f3e17e4215aeb37a22b54be7f577fab4344249e0198c1e30a1067e27951ea5"
+    },
+    "METHODS.md": {
+      "bytes": 9209,
+      "sha256": "6c9d246d04d81dec0fb98d9b57fdf3653009ae581a76edf9c4e956d124cd99e5"
+    },
+    "eligibility.parquet": {
+      "bytes": 3743,
+      "sha256": "baf13885701f5f40b1e0b1b6d7744a87da62d7815bb189ee5a0bf593be073cb1"
+    },
+    "rules.json": {
+      "bytes": 3018,
+      "sha256": "a6182bf3f35c823a7b2b3579ddfde8a2106bd8f231166f995f48f14ad17a3428"
+    },
+    "peaks.parquet": {
+      "bytes": 35586,
+      "sha256": "b673e77597da3dd89b14251e576a013805ea116b2fc54a41ae4247ace508c60f"
+    },
+    "FINDINGS.md": {
+      "bytes": 16074,
+      "sha256": "7e16cf2da7a0f117d91af9cb8ff3fdbdf8a1addbc602ee69bc8bf7a07cd38afa"
+    },
+    "verification.json": {
+      "bytes": 473,
+      "sha256": "1b1b599c8395eea3be01b780761e97d9560e7b86b1369f85806345ccce37f119"
+    },
+    "context.parquet": {
+      "bytes": 27921,
+      "sha256": "a682a439d3f931940fcbd8356963b44599e2c42853c4edae3e82f2f64b2b93c4"
+    },
+    "links.parquet": {
+      "bytes": 34352,
+      "sha256": "d168cf11eaefe86b7417737d0630b635b901d45e3557539c1b6855a2b7238db9"
+    },
+    "camera_calendar.parquet": {
+      "bytes": 11476,
+      "sha256": "3ec09d0c4a0b44c51160d8582a039a35589d1da75fa7b7ffed33148f69f68d1b"
+    }
+  }
+}

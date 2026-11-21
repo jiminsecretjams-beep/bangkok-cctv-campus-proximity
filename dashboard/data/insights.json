@@ -1,0 +1,66 @@
+[
+  {
+    "id": "morning_07_09",
+    "title": "Widespread weekday morning excess",
+    "value": 61.159169550173,
+    "unit": "median within-camera weekday-versus-weekend percent difference",
+    "cameras": 89,
+    "positive_cameras": 85,
+    "evidence": "headline_period_evidence.csv",
+    "interpretation": "descriptive association; not an estimate of traffic caused by schools"
+  },
+  {
+    "id": "midday_10_14",
+    "title": "Midday is broadly similar across day types",
+    "value": 0.8773234200743385,
+    "unit": "median within-camera weekday-versus-weekend percent difference",
+    "cameras": 89,
+    "positive_cameras": 46,
+    "evidence": "headline_period_evidence.csv",
+    "interpretation": "descriptive association; not an estimate of traffic caused by schools"
+  },
+  {
+    "id": "afternoon_15_17",
+    "title": "Smaller weekday afternoon excess",
+    "value": 28.676470588235304,
+    "unit": "median within-camera weekday-versus-weekend percent difference",
+    "cameras": 89,
+    "positive_cameras": 82,
+    "evidence": "headline_period_evidence.csv",
+    "interpretation": "descriptive association; not an estimate of traffic caused by schools"
+  },
+  {
+    "id": "monday_direction_check",
+    "title": "Most selected weekday peaks repeat direction on Monday",
+    "value": 48,
+    "denominator": 57,
+    "unit": "camera peak candidates",
+    "evidence": "weekday_peak_holdout.csv",
+    "interpretation": "one held-out day; no peak reselection; not a long-term forecast"
+  },
+  {
+    "id": "triam_local_exception",
+    "title": "Triam Udom context has lower weekday afternoon counts",
+    "value": -34.466019417475735,
+    "unit": "within-camera weekday-versus-weekend percent difference at 15:00-17:00",
+    "camera_id": "239",
+    "evidence": "camera_commute_effects.csv",
+    "interpretation": "road-view context; school-gate interaction and school cause unverified"
+  },
+  {
+    "id": "coverage_gap",
+    "title": "27 August early-hours low counts cannot be interpreted as empty roads",
+    "value": 0,
+    "unit": "camera-hours passing coverage in each of hours 06, 07 and 08",
+    "evidence": "coverage_by_date_hour.csv",
+    "interpretation": "insufficient usable observations, not zero vehicles"
+  },
+  {
+    "id": "rain_comparison_unavailable",
+    "title": "A matched dry-only comparison is unavailable",
+    "value": null,
+    "unit": "percent difference",
+    "evidence": "sensitivity_checks.csv",
+    "interpretation": "rain remains a possible confounder; do not replace unavailable estimates with zero"
+  }
+]

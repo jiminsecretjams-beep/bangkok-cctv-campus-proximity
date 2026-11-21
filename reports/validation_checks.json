@@ -19,13 +19,13 @@
     "data/processed/institutions_clean.csv": "baaae0537b81d971f4cc1407c2155d8cd1d939e9203646943c53aa3e715c719c",
     "data/processed/institution_provenance.csv": "959178da5e1f07dcb8a508004c4392f9600b79501c41c1bbd08afb270ff681bc",
     "data/processed/camera_institution_matches.csv": "66e79e47a3b1bcb317214fadefafe6d36b1deab23ba8e2d202875fc101779e75",
-    "data/processed/cctv_campus_flags.csv": "0af510623d7fd1edce8d2cab423400493e807e22f88cd6bd8e7fd0b03964bd10",
+    "data/processed/cctv_campus_flags.csv": "4d879b37a85acd10eb1466463ababdc436d1c46b92b28929f0c4b6f0b87ba0e1",
     "data/processed/borderline_matches.csv": "a005d2cfe3a257f4140c723b63b04abc0a77f3c859b0a51d2ebccd2001c386a3",
     "data/processed/rejected_records.csv": "953bf40287f7762911bcb69aa4e7bff18d488be24fedbfdaa6e1371796306016",
     "data/processed/campus_components.csv": "1fde50b96002617fc1fc501c9f1f408330d10c388f7289e189359aeec8eb282a",
     "data/processed/reference_corrections.csv": "5ba3f93f0fd352e52958a4a69a3c307ab22d778532b8ef5dfe6f15c16cbb973c",
     "reports/camera_review.csv": "57ecfcf537d00548165d7a5a49a44a341ab87dcf1aa407b7c56f7bbd909a5201",
-    "reports/campus_proximity_map.html": "e4814ffcca750cc51058d2abfad2ba4fd2073f4b930e9739fdd76a2a6573ff95",
+    "reports/campus_proximity_map.html": "222cc4f6c82e1416e21154d7c800f142ed6cb64639dedc713917c02d91f652a9",
     "reports/quality_report.md": "9e4ba9a300a1af5f53ed17a85a99c0c5e5baa0160b434cff1e44db30dab1c632",
     "reports/finalization_review.md": "bea017742201bc4a40d517e0f571720b27a84d43b462919489ecdd31484c50b2"
   }

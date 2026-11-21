@@ -1,0 +1,39 @@
+{
+  "dfine-x-obj2coco": {
+    "repository": "ustc-community/dfine-xlarge-obj2coco",
+    "revision": "15f18d917eaddcedf9e3ffb082adcfb97a0b2d4d",
+    "files": [
+      {
+        "path": "models/dfine-xlarge-obj2coco/model.safetensors",
+        "sha256": "19246b6d70c175d552752c8b7fac9b37516d8b14df2476a2cfd174837fc4df37",
+        "url": "https://huggingface.co/ustc-community/dfine-xlarge-obj2coco/resolve/15f18d917eaddcedf9e3ffb082adcfb97a0b2d4d/model.safetensors"
+      },
+      {
+        "path": "models/dfine-xlarge-obj2coco/config.json",
+        "sha256": "cad171dc7c4e51891f57db3fdee3d47b68ca73a786b61fddbeeb63ccc883e5b2",
+        "url": "https://huggingface.co/ustc-community/dfine-xlarge-obj2coco/resolve/15f18d917eaddcedf9e3ffb082adcfb97a0b2d4d/config.json"
+      },
+      {
+        "path": "models/dfine-xlarge-obj2coco/preprocessor_config.json",
+        "sha256": "7e9e2245806aa3ef068a5321f5eebee3116fa4cec560173231954ffaca930eca",
+        "url": "https://huggingface.co/ustc-community/dfine-xlarge-obj2coco/resolve/15f18d917eaddcedf9e3ffb082adcfb97a0b2d4d/preprocessor_config.json"
+      },
+      {
+        "path": "models/dfine-xlarge-obj2coco/README.md",
+        "sha256": "70ada8b6ea8fe1bbc9aeb4b376309f9708fce6bfbd4677526e01b08086786a66",
+        "url": "https://huggingface.co/ustc-community/dfine-xlarge-obj2coco/resolve/15f18d917eaddcedf9e3ffb082adcfb97a0b2d4d/README.md"
+      }
+    ]
+  },
+  "yolo26x": {
+    "repository": "ultralytics/assets",
+    "revision": "v8.4.0",
+    "files": [
+      {
+        "path": "models/yolo26x.pt",
+        "sha256": "9fdd44a31c504547ffb81d2c6d9e6dac3493c8eaa8b0398d3f43bae6c7003e92",
+        "url": "https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26x.pt"
+      }
+    ]
+  }
+}

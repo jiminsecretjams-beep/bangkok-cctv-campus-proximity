@@ -1,0 +1,19 @@
+digraph BangkokCCTV {
+  graph [rankdir=TB, bgcolor="transparent", nodesep=0.32, ranksep=0.42, pad=0.2];
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=12,
+        color="#B5CBD1", fillcolor="#FFFFFF", fontcolor="#183745", margin="0.15,0.10"];
+  edge [color="#467481", arrowsize=0.75];
+  cctv [label="BMA CCTV snapshots\n61,319 images across 100 cameras"];
+  external [label="Additional data collection\nEducation locations and calendars"];
+  clean [label="1. Data engineering\nYOLO counts, timestamps and quality checks", fillcolor="#E5F2F6"];
+  context [label="Campus distances\n1.5 km screen and calendar scope"];
+  analysis [label="2. Data science\nMatched hours and weekday versus weekend", fillcolor="#E5F2F6"];
+  insights [label="4. Insights\nMorning differences and Monday peak check", fillcolor="#EAF5EE"];
+  dashboard [label="3. Visualization\nStreamlit charts, maps and camera explorer", fillcolor="#EAF5EE"];
+  { rank=same; cctv; external; }
+  { rank=same; clean; context; }
+  cctv -> clean -> analysis;
+  external -> context -> analysis;
+  analysis -> insights -> dashboard;
+  analysis -> dashboard;
+}

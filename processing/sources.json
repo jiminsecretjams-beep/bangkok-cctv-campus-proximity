@@ -1,0 +1,16 @@
+{
+  "archive": {
+    "file_id": "1mHP-N0qtbBy5IxhjZVovP_8g1Hw2H7dO",
+    "path": "data/raw/cctv_images.zip",
+    "size": 1591099329,
+    "sha256": "2a088ff18129120d2b2b81b270b3cb879328ba9ad9ccb69c8fb2b1febf88ce87"
+  },
+  "metadata": {
+    "file_id": "1VSCzWeNOV7ds_d9BNJ9i20_9JzyncL2F",
+    "path": "data/raw/cctv_info.csv"
+  },
+  "model_urls": {
+    "yolo11n.pt": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt",
+    "yolo11s.pt": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11s.pt"
+  }
+}

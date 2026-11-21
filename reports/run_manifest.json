@@ -1,5 +1,5 @@
 {
-  "run_utc": "2026-11-07T17:40:04.146698+00:00",
+  "run_utc": "2026-11-21T15:16:35.506225+00:00",
   "pipeline_version": "1.1",
   "configuration": {
     "radius_m": 1500,
@@ -38,7 +38,7 @@
     }
   },
   "input_sha256": {
-    "data/raw/cctv_info.csv": "bdea9917254e0131988957e7431a0078e72db90a841b4bba7bf28609aa6eb47b",
+    "data/raw/cctv_info.csv": "dabece9c7207190898fed56111d9a0cb73f6277948cd1e50ac9130c2f3a2b145",
     "config.json": "6833893d7add3dc0e8b6dd40dccec35ecf9fd41545085dd78687aff82de1b765",
     "scripts/campus_pipeline.py": "c8a6660775c4103ae0f1162523c2c6585348da216e66da11afcf34f762bb91f4",
     "scripts/map_template.html": "67ac4d90b2fdffe6e4f6532f4d391b1d8bd1dcaee8e8f9d8272b951ec47ec803",
@@ -50,7 +50,7 @@
     "data/reference/overpass_campus_geometry_query.txt": "7f2868936c8650fe0540885d4077ece05b626038357a15060103a1c82eb2e48e",
     "data/reference/verification_notes.json": "7927aa2cca7a872555c62ca89d9c58e401a029a7d87d85a080bf727778376771",
     "data/reference/reference_review.json": "fc2d9bf6e07210b7fda947b4341ec6390071c4716d7e14188ce63bbb079c6e0b",
-    "data/reference/pre_review_camera_flags.csv": "836a8f868ad7ae7de1f3d58e5c4f33f1070d8012ff8295d1520866d30a03b41f",
+    "data/reference/pre_review_camera_flags.csv": "87cb1c8a37e1b9e0de6601899ac3a3a3915272b96858c0f599ae581b855ef108",
     "data/reference/osm_review_candidates.json": "be82cdcb8e2ece75d956f7352317bb34fefdf52800c564f9177c877715626955",
     "data/reference/overpass_review_query.txt": "b4b451436af8e76516af226018b4ee01cf91b14f7267db155415b68f165f350a",
     "data/reference/review_sources/donbosco_admission.html": "687c242a719aca8e8624811e95f388464e2374625e9afab42115a0019c12bb78",

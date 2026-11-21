@@ -1,5 +1,7 @@
 # Bangkok CCTV: campus proximity
 
+For the complete course source bundle, start with [SUBMISSION.md](SUBMISSION.md).
+
 Local data engineering handoff for classifying the 100 supplied CCTV cameras within **1,500 metres** of schools, universities and colleges.
 
 ## Open the results
