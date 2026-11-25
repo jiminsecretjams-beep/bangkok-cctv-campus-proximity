@@ -1,0 +1,4 @@
+variant,period,n_cameras,median_relative_pct,q25_pct,q75_pct,positive_cameras,common_primary_cameras,common_primary_median_pct,status
+primary_balanced_days,afternoon_15_17,89,28.676470588235304,13.887554060547803,52.13675213675211,82,89,28.676470588235304,estimated
+primary_balanced_days,midday_10_14,89,0.8773234200743385,-8.566978193146413,11.34751773049647,46,89,0.8773234200743385,estimated
+primary_balanced_days,morning_07_09,89,61.159169550173,35.7142857142857,100.32414910858995,85,89,61.159169550173,estimated

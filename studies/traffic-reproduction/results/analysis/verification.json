@@ -1,0 +1,14 @@
+{
+  "result": "pass",
+  "checks": [
+    "Original input and calendar files unchanged by analysis",
+    "Class means reconcile with vehicle means",
+    "Complete camera/date/hour grid with null excluded counts",
+    "Saved headline medians independently reconcile",
+    "Minimum three weekdays and both weekend days in primary comparisons",
+    "Every primary period uses identical accepted dates and required clock-hour coverage",
+    "Peak selection uses Tue-Fri only; Monday never selects the peak",
+    "No image inference or changes to reviewer files",
+    "School evidence retains scope and unknown applicability"
+  ]
+}

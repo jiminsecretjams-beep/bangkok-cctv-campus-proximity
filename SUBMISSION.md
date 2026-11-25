@@ -38,7 +38,9 @@ Web scraping and API collection are separate from the data engineering component
 | Tourism Authority of Thailand calendar and Horwang School | The dashboard's source records document a holiday cross-check and a school timetable case. | Source URLs, scope and recorded hashes in `dashboard/data/sources.json`, with processed evidence in the dashboard bundle. |
 | OBEC and Bangkok Metropolitan Administration school records | Supplied directory and coordinates seed the school catalogue. | Original team files under `data/raw/webscraping/` and reference integration in `scripts/campus_pipeline.py`. |
 
-Attribution and exact source URLs are in the source records and project README. The dashboard bundle records hashes for the research artifacts it used. It contains their selected outputs, methods and findings. The original scripts that prepared every research table and the original `package_dashboard_data.py` were unavailable in the supplied folders and GitHub checkout. Keep the portable dashboard bundle with the source so the verified views run from it.
+Attribution and exact source URLs are in the source records and project README. The portable dashboard bundle records hashes for the research artifacts it used and includes prepared tables, methods, and findings. The [school traffic rebuild](studies/traffic-reproduction/README.md) contributed through Panyawat’s fork supplies a reproducible workflow for the research tables, chart outputs, and dashboard data. Its launcher is separate from the presentation dashboard.
+
+The [camera reliability study](studies/camera-reliability/README.md) is a companion analysis of missing, frozen, and unusable frames from the same study week. Its report explains the failure patterns and the limits of drawing conclusions about their causes.
 
 ## Upstream reproduction
 

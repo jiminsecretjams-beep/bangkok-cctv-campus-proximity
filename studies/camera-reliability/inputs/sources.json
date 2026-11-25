@@ -1,0 +1,21 @@
+{
+  "study": "Bangkok CCTV, 25-31 August 2026, Bangkok local time",
+  "failure_kit": {
+    "source": "https://github.com/Panyawat-Phothiphanich/bangkok-cctv-campus-proximity/blob/b7536c7ff77782e68d03004e9c7564516f1cbd9a/inputs/failure_kit.zip",
+    "original_sha256": "ee37180af4f1f488de7048fa334b9ecca27efd50b32bf93fe0d0032af831ac42",
+    "changes": "Removed the camera IP address field and replaced subnet values with opaque labels that preserve group membership. Failure slots and episodes are byte identical."
+  },
+  "vehicle_counts": {
+    "model": "YOLO26x",
+    "scope": "whole image, no road boundary",
+    "confidence_threshold": 0.25,
+    "rows": 61319,
+    "source": "https://github.com/Panyawat-Phothiphanich/bangkok-cctv-campus-proximity/releases/download/yolo26x-full-frame-20261109/traffic_full_frame.parquet",
+    "source_sha256": "eb77e8cd0d98e0042f7c2fb56d747066bf264f16e9b94e3be4ad265d64f32c09",
+    "derivation": "Keep rel_path, camera_id, vehicle_count and eligible_temporal. rel_path removes only the cctv_images/ prefix. Preserve null counts."
+  },
+  "input_sha256": {
+    "vehicle_counts.csv.gz": "23343a8784be144b625e491387519746bd6f7c0a94e57c9ff7122b608be7afbf",
+    "failure_kit.zip": "9b40dab58ad97b42090c871ea88fc35ac84bc69c2253423c6d20c3d0a47b8798"
+  }
+}

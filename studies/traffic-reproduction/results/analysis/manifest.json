@@ -1,0 +1,152 @@
+{
+  "inputs": {
+    "results/calendar/observations_with_calendar.parquet": "a1ce98f1018593d08535db7e1573b13fa530597d5c493abcbe5a49c07f3e5c30",
+    "results/calendar/rules.json": "a6182bf3f35c823a7b2b3579ddfde8a2106bd8f231166f995f48f14ad17a3428",
+    "results/calendar/date_labels.csv": "7c3cd8adddc69bb8b4d13bf607ada6ebe24c8114a4e7d1c1c1ac96b613e548c1",
+    "inputs/context/rainfall.parquet": "4836ba609d13ce684cead670ab590842f9511ae84edb81a073220f6bf96aba74",
+    "inputs/context/school_schedules.csv": "6358711434cb91223dfc37599f52e19d8974fed162100baca21e91adf66c8ca3",
+    "inputs/context/camera_road_context.csv": "8a89e5e23ee95c93c1081331c92013c8b10bd6bc6c703324b0d2cef0c484b744",
+    "inputs/context/camera_timestamp_audit.csv": "02667dc4f1fbe569c83cebe9ca822e7ce10e5d41bc16239fe20985868634fd37",
+    "inputs/campus/cctv_campus_flags.csv": "1b4af7b53ccf6fede9ac6cef4c5a08009dcc5ab8a28e04f4ea044a2e39cc8ac5",
+    "inputs/campus/camera_institution_matches.csv": "66e79e47a3b1bcb317214fadefafe6d36b1deab23ba8e2d202875fc101779e75",
+    "inputs/campus/institutions_clean.csv": "baaae0537b81d971f4cc1407c2155d8cd1d939e9203646943c53aa3e715c719c"
+  },
+  "code": {
+    "workflow/analysis.py": "d507b96b09cb56d775f5025c17a595074543bfa500599d7fc2f59e9a3f800077",
+    "workflow/traffic.py": "215a2b0fd405844e019b56f0ec240aa3aae8f6a9e03ac42c049525fa7408b910"
+  },
+  "files": {
+    "camera_day_hour.csv": {
+      "bytes": 1725792,
+      "sha256": "a8df4cc3aede9a0faede8557c3758582000cbcb3129db102c2a6c3be6bed24d1"
+    },
+    "matched_hourly_profile.csv": {
+      "bytes": 648,
+      "sha256": "209782801355741317cd217cb5626bf429925142c49cf66f0f32e7a7975c04fe"
+    },
+    "summary.json": {
+      "bytes": 2106,
+      "sha256": "37120443df98b49f6740d8d9eca90255f6357399a6d5928fcf4d212e9670b0d7"
+    },
+    "location_effects.csv": {
+      "bytes": 9683,
+      "sha256": "a753101650bcef550b97b1a38ef02c592c9dcaff5a9030268573a39daad9b1b0"
+    },
+    "camera_commute_effects.csv": {
+      "bytes": 56393,
+      "sha256": "3d33a6082bb42786dfeffdc1411d59986699af265d8d6a2fab1d7275d8b92f23"
+    },
+    "07_school_case_profiles.png": {
+      "bytes": 195100,
+      "sha256": "7ffb606fc91acb4d555ca3f2b01d088cc9eb750ab649cc8486a187b24b585834"
+    },
+    "model_rain_coverage.csv": {
+      "bytes": 4514,
+      "sha256": "3a54cccad20b5196ae3b52c1d432c93be34884742240d9e40b87088529d3ae01"
+    },
+    "proximity_band_comparisons.csv": {
+      "bytes": 310,
+      "sha256": "eaf6fc451c4fb014717e7d9299f8a97233380cb108c362582068359ad9de2798"
+    },
+    "peak_candidate_daily_evidence.csv": {
+      "bytes": 437894,
+      "sha256": "3b8d37641e3f8c63237cc48264e1bb5874985c0b4756dbd41f6cbcefccaec173"
+    },
+    "location_resampling.csv": {
+      "bytes": 311,
+      "sha256": "4a8e2533a79719c0ad3523c88b24f1a2de941211e6f249ecc645222541eea53e"
+    },
+    "06_school_baseline_sensitivity.png": {
+      "bytes": 53900,
+      "sha256": "51dc3f1bc7c4866ee46e0747e81e80ee607f426ef9fa2b9a6d0680c03678ef89"
+    },
+    "balanced_camera_day_period.csv": {
+      "bytes": 186473,
+      "sha256": "8dca701fe606231dda20197c7e7de6d9a8738a14cbed853d486e6a3e7a9d1602"
+    },
+    "road_class_proximity_context.csv": {
+      "bytes": 616,
+      "sha256": "d286f2f6a37b9cb18e865b07c5fb8ed5a7684578b5a795f2658c7d8843e726a6"
+    },
+    "sensitivity_checks.csv": {
+      "bytes": 7623,
+      "sha256": "10fcbf79b865ba4d283d1954145ca256371b35c7a405b5f93c48a218d13aea71"
+    },
+    "school_case_headline_evidence.csv": {
+      "bytes": 1656,
+      "sha256": "2f255c985cb7678145912e153821814506af9bf07c66bd21d5a4bd8e54f4255d"
+    },
+    "05_morning_vehicle_mix.png": {
+      "bytes": 42058,
+      "sha256": "68bc83ebccdcc7853550bbdbac129b1623bc2b2270dea0e95a0d542375dc35c9"
+    },
+    "headline_period_evidence.csv": {
+      "bytes": 518,
+      "sha256": "eddf1e2a0f1f0d2c4f2604b617a08be0736a4ad296a47fc429a636576b400c60"
+    },
+    "camera_period_comparisons.csv": {
+      "bytes": 97432,
+      "sha256": "ed4cdab5cd01a0b69332ce1a1cc82701b1415303a47166b8cd05b18035313236"
+    },
+    "01_same_clock_hour.png": {
+      "bytes": 95656,
+      "sha256": "ec4ae669b523f05ecf19a18ead946414e4d973ae5585c3919a15e5e4631ac54d"
+    },
+    "school_type_screen.csv": {
+      "bytes": 339178,
+      "sha256": "d614457135e37272855973e05c8dbb9f71524b6f4dcc1f613699848eef87f9a4"
+    },
+    "camera_eligibility.csv": {
+      "bytes": 1397,
+      "sha256": "e0d0a0ec7c6ad1ab3d84c5fcedb37afc701084048ac5830a9bef7dab5862418b"
+    },
+    "coverage_by_date_hour.csv": {
+      "bytes": 2688,
+      "sha256": "dc68478e9440981c47057f083b6c5c73ae60efa424b285a4e71457561e585ccf"
+    },
+    "verification.json": {
+      "bytes": 625,
+      "sha256": "f1a3ef49e0e4868a0621b7845f3558a492f1b95e8c1476a7beb34d4b13f262fb"
+    },
+    "03_coverage.png": {
+      "bytes": 62330,
+      "sha256": "92f1ebfa801cf87e5b53d60078d12aad9e95eb251497a9028bc66635ff69b0ba"
+    },
+    "school_anchor_daily_sensitivity.csv": {
+      "bytes": 149891,
+      "sha256": "69b65721c0d655c5c88e6a6fdf3a382496f15fc664b323c28e232746dc864e6a"
+    },
+    "vehicle_class_comparisons.csv": {
+      "bytes": 1647,
+      "sha256": "0a4e3c2f57a013cb64ff9aa8948fd917cd900bc159a020487e7da7eb1637eb4a"
+    },
+    "same_clock_hour_comparisons.csv": {
+      "bytes": 177262,
+      "sha256": "1c27135c376cbb960706272060bd20e2f299dffc98a2c944a584fd660e784edf"
+    },
+    "02_camera_period_distribution.png": {
+      "bytes": 115592,
+      "sha256": "5c41092ef1cde7a6b1155206773daa7ae388165c1713d996bbbf02131ca9fc65"
+    },
+    "camera_day_hour.parquet": {
+      "bytes": 245204,
+      "sha256": "10a84b1786cfc8eec2c281924b923cc63e799f3e349b982d5932697ca67fff8a"
+    },
+    "04_proximity_context.png": {
+      "bytes": 76861,
+      "sha256": "52fd40bc36bdd738a7d7a2b4ecd832aeb12dcdac121338f272f397504522d058"
+    },
+    "camera_context.csv": {
+      "bytes": 39278,
+      "sha256": "bd06789a470e58d993f06bb9976fac12acd0eca5a229c7fe76e572ea93567cf6"
+    },
+    "school_anchor_summary.csv": {
+      "bytes": 19507,
+      "sha256": "85cd0aab5069713d47136a5875612dff6c7ac4d24b5ddf7ab3d71c7d799bb00b"
+    },
+    "weekday_peak_holdout.csv": {
+      "bytes": 47037,
+      "sha256": "98f10cb5072214485475bb0013f067d9202e995725ece4b5694d98f7563d9ed7"
+    }
+  }
+}

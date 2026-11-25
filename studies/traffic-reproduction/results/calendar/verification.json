@@ -1,0 +1,14 @@
+{
+  "result": "pass",
+  "checks": [
+    "Saved Parquet preserves every original column, count, quality flag and row in order",
+    "One unique row per source image; date and camera joins are many-to-one",
+    "Bangkok dates and weekend flags independently reconcile with UTC timestamps",
+    "All seven dates and all 100 camera/date combinations covered",
+    "Negative holiday labels restricted to explicitly crosschecked dates",
+    "Programme calendar never becomes a university-wide calendar",
+    "Activity/cohort rules never imply closure or daily attendance",
+    "Unknown closures remain unknown; timetable scenarios remain reference-only",
+    "All source snapshots match reviewed hashes; original observation input unchanged"
+  ]
+}

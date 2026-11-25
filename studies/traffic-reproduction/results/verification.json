@@ -1,0 +1,27 @@
+{
+  "status": "pass",
+  "verified_date": "2026-11-22",
+  "main_tests_passed": 41,
+  "optional_image_processing_tests_passed": 4,
+  "optional_tests_used_synthetic_images": true,
+  "new_yolo_inference_executed": false,
+  "fresh_environment_install": "uv sync --frozen --python 3.11",
+  "fresh_folder_rebuild": "python run.py rebuild --output results/rebuilt",
+  "arbitrary_working_directory_check": true,
+  "independent_proximity_links_checked": 2306,
+  "independent_source_hour_cells_checked": 10037,
+  "independent_camera_period_rows_checked": 267,
+  "observations_preserved": 61319,
+  "columns_preserved": 82,
+  "unchanged_analysis_outputs": [
+    "camera_day_hour.parquet",
+    "camera_period_comparisons.csv",
+    "balanced_camera_day_period.csv",
+    "school_anchor_daily_sensitivity.csv",
+    "sensitivity_checks.csv",
+    "weekday_peak_holdout.csv",
+    "headline_period_evidence.csv"
+  ],
+  "inference_limit": "Tests verify intake, quality gates, whole-image counting, nulls and resume; full model execution was not repeated.",
+  "reproduction_boundary": "Frozen counts and curated campus/context inputs to calendar, analysis, plots and dashboard. Historical collection and human source review are documented upstream inputs."
+}

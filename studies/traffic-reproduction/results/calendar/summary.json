@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-11-22T01:22:00.681260+00:00",
+  "status": "completed_with_explicit_coverage_limits",
+  "study_dates": [
+    "2026-08-25",
+    "2026-08-26",
+    "2026-08-27",
+    "2026-08-28",
+    "2026-08-29",
+    "2026-08-30",
+    "2026-08-31"
+  ],
+  "images": 61319,
+  "cameras": 100,
+  "original_columns_preserved": 67,
+  "institutions": 1154,
+  "camera_institution_links": 2306,
+  "camera_date_rows": 700,
+  "scope_date_rows": 8099,
+  "calendar_rule_count": 4,
+  "source_count": 4,
+  "public_holiday_dates": 0,
+  "institution_term_known_scope_dates": 7,
+  "programme_term_known_scope_dates": 7,
+  "closure_known_scope_dates": 0,
+  "images_with_nearby_institution_term_context": 3066,
+  "schedule_references": 28,
+  "source_observations_sha256": "eb77e8cd0d98e0042f7c2fb56d747066bf264f16e9b94e3be4ad265d64f32c09",
+  "traffic_analysis_executed": false,
+  "image_inference_executed": false
+}

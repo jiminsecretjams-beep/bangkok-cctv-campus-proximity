@@ -1,0 +1,130 @@
+{
+  "sources": [
+    {
+      "source_id": "holiday_mirror",
+      "source_kind": "community_mirror",
+      "note": "JSON download; attributed to government sources by its maintainer, not a direct government feed",
+      "snapshot": "inputs/snapshots/thai_public_holidays.json",
+      "source_url": "https://raw.githubusercontent.com/ppraserts/thailand-open-data/main/data/thai-public-holidays/all.json",
+      "resolved_url": "https://raw.githubusercontent.com/ppraserts/thailand-open-data/main/data/thai-public-holidays/all.json",
+      "retrieved_at": "2026-11-14T10:50:28.974447+00:00",
+      "sha256": "3a4efb2f9e03da78636082de4a921635bb2299cf396597bec0755cc21cded693",
+      "bytes": 17380
+    },
+    {
+      "source_id": "tat_calendar_2026",
+      "source_kind": "official_tourism_calendar",
+      "note": "Independent crosscheck of listed national holiday dates for the study week",
+      "snapshot": "inputs/snapshots/tat_calendar_2026.html",
+      "source_url": "https://www.thailandtravel.or.jp/about/calendar/",
+      "resolved_url": "https://www.thailandtravel.or.jp/about/calendar/",
+      "retrieved_at": "2026-11-14T10:50:30.005519+00:00",
+      "sha256": "9e67ef6cea80e5a0521a8772a0b902b711bd01edce963bb795c430714fea2f4e",
+      "bytes": 152114
+    },
+    {
+      "source_id": "chula_bba_calendar_2026",
+      "source_kind": "official_programme_calendar",
+      "note": "BBA International AY2026 only; not all Chula programmes",
+      "snapshot": "inputs/snapshots/chula_bba_calendar.html",
+      "source_url": "https://bba.acc.chula.ac.th/academic-calendar",
+      "resolved_url": "https://bba.acc.chula.ac.th/academic-calendar",
+      "retrieved_at": "2026-11-14T10:50:31.046874+00:00",
+      "sha256": "9a6e1d0983e9c221b70476c1565f1e35ca5b84007afa4eb26425f2eeef92217a",
+      "bytes": 1041300
+    },
+    {
+      "source_id": "horwang_calendar_2026",
+      "source_kind": "official_school_calendar",
+      "source_url": "https://www.horwang.ac.th/temp/calendar-m69-1.pdf",
+      "snapshot": "inputs/snapshots/horwang_calendar_2026.pdf",
+      "sha256": "8596bad3de5d07bba427ece8d57f83eb52bb902902eee6f2363d0ff030b440fe",
+      "bytes": 5386371,
+      "retrieved_at": "previously_cached; see school_freight fetch manifests",
+      "reviewed_at": "2026-11-14",
+      "note": "PDF pages 33, 43, 45 visually/textually reviewed; dates may change according to the school notice."
+    }
+  ],
+  "files": {
+    "summary.json": {
+      "bytes": 901,
+      "sha256": "e99f5010efed988f465771134d4e6811b6c6b38ef002b424400adfab85244df6"
+    },
+    "reviewed_sources.json": {
+      "bytes": 2297,
+      "sha256": "302e35645ba8603e9d786cb3bf97a6bd0be146299aa84e8748340e278eb97630"
+    },
+    "observations_with_calendar.parquet": {
+      "bytes": 11625258,
+      "sha256": "a1ce98f1018593d08535db7e1573b13fa530597d5c493abcbe5a49c07f3e5c30"
+    },
+    "camera_institution_calendar_daily.csv": {
+      "bytes": 6272918,
+      "sha256": "345eb5a1263f579a9e4fab5ea2856826d535ff5be47e90d67670a929a4055899"
+    },
+    "schedule_evidence_reference.csv": {
+      "bytes": 8176,
+      "sha256": "d8f3b401dea1e0bd8d83dd8ddfba4f88eee59be6ba5f651ef0036a924e8b8b0a"
+    },
+    "public_holidays.csv": {
+      "bytes": 14563,
+      "sha256": "0cfb333e3e076a573284c335eee3187654fe14767003cbf7cef77ed2eabdab72"
+    },
+    "observation_calendar_labels.csv": {
+      "bytes": 16659021,
+      "sha256": "628721a8861aa9db2393eb43f9451ce5d8a5757cb2ce9ab9505619b71f3fc237"
+    },
+    "date_labels.csv": {
+      "bytes": 1226,
+      "sha256": "7c3cd8adddc69bb8b4d13bf607ada6ebe24c8114a4e7d1c1c1ac96b613e548c1"
+    },
+    "national_holiday_review.json": {
+      "bytes": 819,
+      "sha256": "ecb0ff84e6e319ac95b06308d4911f6e54b198ed60dfd93074a36095c3aba47b"
+    },
+    "rules.json": {
+      "bytes": 3018,
+      "sha256": "a6182bf3f35c823a7b2b3579ddfde8a2106bd8f231166f995f48f14ad17a3428"
+    },
+    "camera_calendar_daily.csv": {
+      "bytes": 56795,
+      "sha256": "ad60bfb420112527ddcc1148a7d7e63e99ffaf9aa2a727cb568f4497302a1ca3"
+    },
+    "institution_scope_calendar_daily.csv": {
+      "bytes": 2404925,
+      "sha256": "1764dd69c1046a2c2e5120cbfc37d71ab4b34dc2ece5bf631e9a7b026f43364b"
+    },
+    "calendar_rules.csv": {
+      "bytes": 2023,
+      "sha256": "a1e6013640230c55903ed751866bae17553d6012bc55eef2b6da718e3ffb0472"
+    },
+    "verification.json": {
+      "bytes": 742,
+      "sha256": "1dda402a49b7ed1c1eb2af9885d87abf5a8bdfc7bc6ab17149a4e5cd4dd2eebc"
+    }
+  },
+  "inputs": [
+    {
+      "file": "inputs/counts.parquet",
+      "sha256": "eb77e8cd0d98e0042f7c2fb56d747066bf264f16e9b94e3be4ad265d64f32c09"
+    },
+    {
+      "file": "inputs/campus/institutions_clean.csv",
+      "sha256": "baaae0537b81d971f4cc1407c2155d8cd1d939e9203646943c53aa3e715c719c"
+    },
+    {
+      "file": "inputs/campus/camera_institution_matches.csv",
+      "sha256": "66e79e47a3b1bcb317214fadefafe6d36b1deab23ba8e2d202875fc101779e75"
+    },
+    {
+      "file": "inputs/context/school_schedules.csv",
+      "sha256": "6358711434cb91223dfc37599f52e19d8974fed162100baca21e91adf66c8ca3"
+    }
+  ],
+  "code": [
+    {
+      "file": "workflow/calendar.py",
+      "sha256": "89a2e90bfba2a10b9b75def1c4d31b81f705c5b32dec32632a477693515c9e6d"
+    }
+  ]
+}

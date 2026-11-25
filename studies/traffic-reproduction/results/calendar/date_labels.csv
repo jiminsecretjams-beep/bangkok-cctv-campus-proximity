@@ -1,0 +1,8 @@
+date_local,weekday_local,weekday_number,is_weekend,is_public_holiday,public_holiday_status,holiday_names_json,holiday_source_ids_json,holiday_review_id,calendar_timezone
+2026-08-25,Tuesday,1,False,False,not_listed_crosschecked,[],"[""holiday_mirror"", ""tat_calendar_2026""]",TH-national-study-week-20261114,Asia/Bangkok
+2026-08-26,Wednesday,2,False,False,not_listed_crosschecked,[],"[""holiday_mirror"", ""tat_calendar_2026""]",TH-national-study-week-20261114,Asia/Bangkok
+2026-08-27,Thursday,3,False,False,not_listed_crosschecked,[],"[""holiday_mirror"", ""tat_calendar_2026""]",TH-national-study-week-20261114,Asia/Bangkok
+2026-08-28,Friday,4,False,False,not_listed_crosschecked,[],"[""holiday_mirror"", ""tat_calendar_2026""]",TH-national-study-week-20261114,Asia/Bangkok
+2026-08-29,Saturday,5,True,False,not_listed_crosschecked,[],"[""holiday_mirror"", ""tat_calendar_2026""]",TH-national-study-week-20261114,Asia/Bangkok
+2026-08-30,Sunday,6,True,False,not_listed_crosschecked,[],"[""holiday_mirror"", ""tat_calendar_2026""]",TH-national-study-week-20261114,Asia/Bangkok
+2026-08-31,Monday,0,False,False,not_listed_crosschecked,[],"[""holiday_mirror"", ""tat_calendar_2026""]",TH-national-study-week-20261114,Asia/Bangkok

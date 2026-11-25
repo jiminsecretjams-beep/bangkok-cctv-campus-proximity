@@ -1,0 +1,27 @@
+[project]
+name = "bangkok-school-traffic"
+version = "1.0.0"
+description = "Bangkok CCTV school-context study: calendar, analysis, and dashboard"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "pandas==2.3.3", "numpy==2.4.6", "pyarrow==21.0.0", "matplotlib>=3.9,<4",
+  "streamlit==1.51.0", "altair>=5.5,<6", "pydeck>=0.9,<1",
+]
+
+[project.optional-dependencies]
+inference = [
+  "ultralytics==8.4.207", "torch==2.15.0", "torchvision==0.29.2", "Pillow==12.3.0",
+  "opencv-python==4.14.0.94", "pydantic==2.14.3", "PyYAML==6.0.3",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.9,<1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

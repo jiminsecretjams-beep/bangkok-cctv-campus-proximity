@@ -1,0 +1,20 @@
+{
+  "review_id": "TH-national-study-week-20261114",
+  "crosschecked_dates": [
+    "2026-08-25",
+    "2026-08-26",
+    "2026-08-27",
+    "2026-08-28",
+    "2026-08-29",
+    "2026-08-30",
+    "2026-08-31"
+  ],
+  "source_ids": [
+    "holiday_mirror",
+    "tat_calendar_2026"
+  ],
+  "reviewed_at": "2026-11-14",
+  "review_method": "Reviewed both complete August listings: August 12 is listed and no dates August 25-31 are listed. Negative labels are limited to these seven dates.",
+  "scope": "Listed national/public holidays only; not school-specific attendance, closures, bank-only holidays or local emergency orders.",
+  "limitation": "Community mirror reports last_updated=2025-02-20 despite containing 2026. Its provenance statement is not independently verified; official calendar crosscheck is stored separately."
+}

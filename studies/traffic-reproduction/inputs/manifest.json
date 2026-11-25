@@ -1,0 +1,189 @@
+{
+  "dataset": "Bangkok CCTV, 25–31 August 2026",
+  "files": {
+    "inputs/calendar/national_holiday_review.json": {
+      "bytes": 819,
+      "sha256": "ecb0ff84e6e319ac95b06308d4911f6e54b198ed60dfd93074a36095c3aba47b"
+    },
+    "inputs/calendar/reviewed_sources.json": {
+      "bytes": 2297,
+      "sha256": "302e35645ba8603e9d786cb3bf97a6bd0be146299aa84e8748340e278eb97630"
+    },
+    "inputs/calendar/rules.json": {
+      "bytes": 3018,
+      "sha256": "a6182bf3f35c823a7b2b3579ddfde8a2106bd8f231166f995f48f14ad17a3428"
+    },
+    "inputs/campus/camera_institution_matches.csv": {
+      "bytes": 480866,
+      "sha256": "66e79e47a3b1bcb317214fadefafe6d36b1deab23ba8e2d202875fc101779e75"
+    },
+    "inputs/campus/cctv_campus_flags.csv": {
+      "bytes": 78824,
+      "sha256": "1b4af7b53ccf6fede9ac6cef4c5a08009dcc5ab8a28e04f4ea044a2e39cc8ac5"
+    },
+    "inputs/campus/institutions_clean.csv": {
+      "bytes": 361045,
+      "sha256": "baaae0537b81d971f4cc1407c2155d8cd1d939e9203646943c53aa3e715c719c"
+    },
+    "inputs/context/camera_road_context.csv": {
+      "bytes": 14879,
+      "sha256": "8a89e5e23ee95c93c1081331c92013c8b10bd6bc6c703324b0d2cef0c484b744"
+    },
+    "inputs/context/camera_timestamp_audit.csv": {
+      "bytes": 4187,
+      "sha256": "02667dc4f1fbe569c83cebe9ca822e7ce10e5d41bc16239fe20985868634fd37"
+    },
+    "inputs/context/rainfall.parquet": {
+      "bytes": 2134213,
+      "sha256": "4836ba609d13ce684cead670ab590842f9511ae84edb81a073220f6bf96aba74"
+    },
+    "inputs/context/school_schedules.csv": {
+      "bytes": 6789,
+      "sha256": "6358711434cb91223dfc37599f52e19d8974fed162100baca21e91adf66c8ca3"
+    },
+    "inputs/counts.parquet": {
+      "bytes": 11644493,
+      "sha256": "eb77e8cd0d98e0042f7c2fb56d747066bf264f16e9b94e3be4ad265d64f32c09"
+    },
+    "inputs/image_model.yaml": {
+      "bytes": 1963,
+      "sha256": "aabd5b552e73eeb67a0f861c2c2e72a86bbf4fe91ead2dda8304dfb5640af446"
+    },
+    "inputs/snapshots/chula_bba_calendar.html": {
+      "bytes": 1041300,
+      "sha256": "9a6e1d0983e9c221b70476c1565f1e35ca5b84007afa4eb26425f2eeef92217a"
+    },
+    "inputs/snapshots/horwang_calendar_2026.pdf": {
+      "bytes": 5386371,
+      "sha256": "8596bad3de5d07bba427ece8d57f83eb52bb902902eee6f2363d0ff030b440fe"
+    },
+    "inputs/snapshots/samsen_m1_1_term1_2026.jpg": {
+      "bytes": 557476,
+      "sha256": "80244451c99e014c0a9d78122ece6d582faa2340cbd81999d9b6273bac7106c3"
+    },
+    "inputs/snapshots/samsen_timetable_2026.html": {
+      "bytes": 181055,
+      "sha256": "ab11ef349af2fd56b3b4a819df1bbc123747491558f8a95d0b6223ea242cea8d"
+    },
+    "inputs/snapshots/tat_calendar_2026.html": {
+      "bytes": 152114,
+      "sha256": "9e67ef6cea80e5a0521a8772a0b902b711bd01edce963bb795c430714fea2f4e"
+    },
+    "inputs/snapshots/thai_public_holidays.json": {
+      "bytes": 17380,
+      "sha256": "3a4efb2f9e03da78636082de4a921635bb2299cf396597bec0755cc21cded693"
+    }
+  },
+  "upstream": {
+    "counts": {
+      "release": "https://github.com/Panyawat-Phothiphanich/bangkok-cctv-campus-proximity/releases/tag/yolo26x-full-frame-20261109",
+      "original_sha256": "eb77e8cd0d98e0042f7c2fb56d747066bf264f16e9b94e3be4ad265d64f32c09",
+      "rows": 61319
+    },
+    "rainfall": {
+      "extraction": "Only image_id and precipitation_mm retained from school_freight_observations.parquet",
+      "original_sha256": "006738d1d265ee59df48f595e1e1493c3d5aaf99f261c7565ab64681a3c3a476"
+    },
+    "context_source_registry": [
+      {
+        "provider": "OpenStreetMap / Overpass",
+        "role": "core",
+        "url": "https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL",
+        "method": "Historical Overpass POST; school outlines, entrances, road geometry",
+        "temporal_scope": "Requested 25 August 2026 00:00 UTC map state",
+        "limitation": "Map completeness and entrance attribution vary; school gate/crossing interaction not established.",
+        "snapshots": [
+          {
+            "file": "data/external/school_freight_20261114/osm_school_roads_august.json",
+            "bytes": 54351252,
+            "sha256": "3cb56b6606ad3e01d9cbcf426ee4502169ecf3d5c1e07b4b5a9450250dc03601"
+          },
+          {
+            "file": "data/external/school_freight_20261114/overpass_query.txt",
+            "bytes": 357,
+            "sha256": "b19f8019afebbdc95e90f1f776097d0e28cd07b15a6ef2389a118338344e4365"
+          }
+        ]
+      },
+      {
+        "provider": "Official schools",
+        "role": "core",
+        "url": "https://www.horwang.ac.th/",
+        "method": "HTML link extraction, linked PDF text extraction, public timetable image retrieval and visual verification",
+        "temporal_scope": "Horwang handbook 2026; Samsen term 1 2026 timetable for M1/1; other records explicitly older/undated",
+        "limitation": "No common dismissal for all classes. School pages can change; actual attendance, exceptions and gate arrival times unverified.",
+        "snapshots": [
+          {
+            "file": "data/external/school_freight_20261114/horwang_handbook_2026.pdf",
+            "bytes": 86935035,
+            "sha256": "1537a2ad44c874576d3479f5dc828a07930ea1382f9682ef7d53cc3a2c0ab5ea"
+          },
+          {
+            "file": "data/external/school_freight_20261114/horwang_calendar_2026.pdf",
+            "bytes": 5386371,
+            "sha256": "8596bad3de5d07bba427ece8d57f83eb52bb902902eee6f2363d0ff030b440fe"
+          },
+          {
+            "file": "data/external/school_freight_20261114/samsen_timetable_2026.html",
+            "bytes": 181055,
+            "sha256": "ab11ef349af2fd56b3b4a819df1bbc123747491558f8a95d0b6223ea242cea8d"
+          },
+          {
+            "file": "data/external/school_freight_20261114/samsen_m1_1_term1_2026.jpg",
+            "bytes": 557476,
+            "sha256": "80244451c99e014c0a9d78122ece6d582faa2340cbd81999d9b6273bac7106c3"
+          },
+          {
+            "file": "data/external/school_freight_20261114/samsen_timetable_folder.json",
+            "bytes": 6456,
+            "sha256": "612b8bf23dbe4a290f24d96d245f82d167df8ae0a25bde95ff62dac989c78d98"
+          },
+          {
+            "file": "data/external/school_freight_20261114/samsen_handbook_2025.pdf",
+            "bytes": 51825685,
+            "sha256": "6e9ff10eb23218be819f6205cfbebaa2aba3735a7ede695aa17d4024c3d99ce3"
+          },
+          {
+            "file": "data/external/school_freight_20261114/saipanya_handbook.html",
+            "bytes": 73194,
+            "sha256": "90761ffe4e11eee3c93673a7729459d1a6d5e3c1f981c9092fe01597c42b991d"
+          },
+          {
+            "file": "data/external/school_freight_20261114/saipanya_handbook_2021.pdf",
+            "bytes": 16129965,
+            "sha256": "64385906513783f087cb0a2159b04eb4873c65fde8b0113c06ce22d5709c4c37"
+          },
+          {
+            "file": "data/external/school_freight_20261114/triam_timetable.html",
+            "bytes": 47476,
+            "sha256": "6c0a7d9e7b757e2bc6ad0fe74de5a6d0be052a3f05cb0035b0a1ac7bf30eaea2"
+          }
+        ]
+      },
+      {
+        "provider": "Open-Meteo",
+        "role": "core",
+        "url": "https://open-meteo.com/en/docs/historical-weather-api",
+        "method": "Reuse previously cached historical hourly API responses, five model grid points",
+        "temporal_scope": "25–31 August 2026; precipitation assigned to preceding-hour interval",
+        "limitation": "Model precipitation, not street rain. Grid cells are shared among cameras, not independent rain measurements.",
+        "snapshots": [
+          {
+            "file": "data/external/research_20261109/weather_pilot.json",
+            "bytes": 30339,
+            "sha256": "5dabb19a7e21edac9382d88338b3a14c87f1c22a985b47a1c82266d2cfd71435"
+          },
+          {
+            "file": "data/external/research_20261109/pilot_fetch_manifest.json",
+            "bytes": 2254,
+            "sha256": "b24c9c47ea42894d3cc2889c54d4425243111d05804d62ce60b9b1ddd99c18af"
+          }
+        ]
+      }
+    ],
+    "camera_flags": {
+      "original_sha256": "0af510623d7fd1edce8d2cab423400493e807e22f88cd6bd8e7fd0b03964bd10",
+      "transformation": "Removed unused ip_address column; no other columns removed"
+    }
+  }
+}

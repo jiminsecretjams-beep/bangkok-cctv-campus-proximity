@@ -1,0 +1,12 @@
+{
+  "result": "pass",
+  "original_source_rows": 61319,
+  "source_hour_cells_checked": 10037,
+  "independently_recomputed_camera_period_rows": 267,
+  "checks": [
+    "All frozen input, code and listed artifact hashes match",
+    "All six accepted hourly class/total means equal direct per-image aggregation",
+    "Every primary camera/period mean and percentage independently recomputed",
+    "Every headline median and positive-camera count independently recomputed"
+  ]
+}

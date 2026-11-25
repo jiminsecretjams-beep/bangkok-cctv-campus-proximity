@@ -1,0 +1,249 @@
+{
+  "slots": 63129,
+  "failures": 2966,
+  "cameras_total": 100,
+  "dates": [
+    "2026-08-25",
+    "2026-08-26",
+    "2026-08-27",
+    "2026-08-28",
+    "2026-08-29",
+    "2026-08-30",
+    "2026-08-31"
+  ],
+  "failure_percent": 4.6983161463036005,
+  "day": [
+    {
+      "date": "2026-08-25",
+      "checks": 9025,
+      "failed": 211,
+      "percent": 2.337950138504155
+    },
+    {
+      "date": "2026-08-26",
+      "checks": 9011,
+      "failed": 299,
+      "percent": 3.3181666851625793
+    },
+    {
+      "date": "2026-08-27",
+      "checks": 8985,
+      "failed": 1759,
+      "percent": 19.577072899276573
+    },
+    {
+      "date": "2026-08-28",
+      "checks": 9034,
+      "failed": 236,
+      "percent": 2.6123533318574275
+    },
+    {
+      "date": "2026-08-29",
+      "checks": 9020,
+      "failed": 192,
+      "percent": 2.12860310421286
+    },
+    {
+      "date": "2026-08-30",
+      "checks": 9029,
+      "failed": 149,
+      "percent": 1.6502381216081514
+    },
+    {
+      "date": "2026-08-31",
+      "checks": 9025,
+      "failed": 120,
+      "percent": 1.3296398891966759
+    }
+  ],
+  "cameras": [
+    {
+      "camera_id": "150",
+      "checks": 635,
+      "failed": 132,
+      "percent": 20.787401574803148
+    },
+    {
+      "camera_id": "206",
+      "checks": 629,
+      "failed": 127,
+      "percent": 20.190779014308426
+    },
+    {
+      "camera_id": "938",
+      "checks": 630,
+      "failed": 123,
+      "percent": 19.523809523809526
+    },
+    {
+      "camera_id": "939",
+      "checks": 631,
+      "failed": 123,
+      "percent": 19.492868462757528
+    },
+    {
+      "camera_id": "395",
+      "checks": 631,
+      "failed": 95,
+      "percent": 15.055467511885896
+    }
+  ],
+  "districts": [
+    {
+      "district": "Bang Kapi",
+      "checks": 1261,
+      "failed": 246,
+      "percent": 19.508326724821572,
+      "cameras": 2
+    },
+    {
+      "district": "Bang Sue",
+      "checks": 630,
+      "failed": 51,
+      "percent": 8.095238095238095,
+      "cameras": 1
+    },
+    {
+      "district": "Phaya Thai",
+      "checks": 2535,
+      "failed": 204,
+      "percent": 8.04733727810651,
+      "cameras": 4
+    },
+    {
+      "district": "Yan Nawa",
+      "checks": 3155,
+      "failed": 226,
+      "percent": 7.163232963549921,
+      "cameras": 5
+    },
+    {
+      "district": "Khlong San",
+      "checks": 1892,
+      "failed": 95,
+      "percent": 5.021141649048626,
+      "cameras": 3
+    }
+  ],
+  "freeze_images": 553,
+  "freeze_top5_images": 484,
+  "freeze_top5_percent": 87.52260397830018,
+  "lighting": {
+    "Dark": 0.9845132743362832,
+    "Day": 5.299951853635051,
+    "Twilight": 5.77634011090573
+  },
+  "types": {
+    "decode artifact": {
+      "images": 35,
+      "min_hour": 6,
+      "max_hour": 19,
+      "days": 7
+    },
+    "duplicate frame": {
+      "images": 553,
+      "min_hour": 6,
+      "max_hour": 21,
+      "days": 7
+    },
+    "missing": {
+      "images": 1810,
+      "min_hour": 6,
+      "max_hour": 20,
+      "days": 7
+    },
+    "obstructed view": {
+      "images": 1,
+      "min_hour": 9,
+      "max_hour": 9,
+      "days": 1
+    },
+    "offline placeholder": {
+      "images": 504,
+      "min_hour": 7,
+      "max_hour": 8,
+      "days": 7
+    },
+    "partial corruption": {
+      "images": 30,
+      "min_hour": 6,
+      "max_hour": 20,
+      "days": 6
+    },
+    "test pattern": {
+      "images": 33,
+      "min_hour": 6,
+      "max_hour": 8,
+      "days": 1
+    }
+  },
+  "pair": {
+    "camera_a": "938",
+    "camera_b": "939",
+    "cofreeze_bins": 92,
+    "freeze_union_bins": 100,
+    "common_observed_bins": 607,
+    "jaccard": 0.92,
+    "distance_km": 2.488987027754488,
+    "same_subnet": true
+  },
+  "traffic": {
+    "freeze_episodes": 33,
+    "freeze_cameras": 15,
+    "median_camera_ratio": 1.0688659793814432,
+    "camera_bootstrap_95pct": [
+      0.8839285714285714,
+      1.3529411764705883
+    ]
+  },
+  "durations": [
+    {
+      "failure_type": "decode artifact",
+      "episodes": 33,
+      "median_min": 10.0,
+      "max_min": 20.0
+    },
+    {
+      "failure_type": "duplicate frame",
+      "episodes": 65,
+      "median_min": 29.6,
+      "max_min": 804.0
+    },
+    {
+      "failure_type": "missing",
+      "episodes": 434,
+      "median_min": 7.2,
+      "max_min": 171.1
+    },
+    {
+      "failure_type": "obstructed view",
+      "episodes": 1,
+      "median_min": 10.0,
+      "max_min": 10.0
+    },
+    {
+      "failure_type": "offline placeholder",
+      "episodes": 485,
+      "median_min": 10.0,
+      "max_min": 20.0
+    },
+    {
+      "failure_type": "partial corruption",
+      "episodes": 25,
+      "median_min": 10.0,
+      "max_min": 30.0
+    },
+    {
+      "failure_type": "test pattern",
+      "episodes": 3,
+      "median_min": 80.1,
+      "max_min": 170.0
+    }
+  ],
+  "longest_freeze": {
+    "camera_id": "150",
+    "minutes": 804.0,
+    "date": "2026-08-27",
+    "ongoing_at_end": true
+  }
+}

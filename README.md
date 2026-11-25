@@ -6,7 +6,7 @@ We used **61,319 snapshots from 100 Bangkok CCTV cameras** to see how visible ve
 
 ## Try the dashboard
 
-Download and extract the [course source bundle](https://github.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/releases/tag/course-source-bundle-v2). On macOS, open `dashboard/start.command`. On another platform, install uv and run these commands from the extracted project folder:
+Download and extract the [current source ZIP](https://github.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/archive/refs/heads/main.zip). On macOS, open `dashboard/start.command`. On another platform, install uv and run these commands from the extracted project folder:
 
 ```sh
 cd dashboard
@@ -24,6 +24,13 @@ The numbers describe vehicles visible per snapshot, including parked vehicles. T
 
 In a [human spot check of eight frames](docs/human-count-spot-check.md), YOLO differed from a teammate’s count by an average of **2.75 vehicles per frame** in absolute terms.
 
+## Reproduce the analysis
+
+- [School traffic rebuild](studies/traffic-reproduction/README.md) recreates the hourly tables, calendar joins, charts, and dashboard data from saved counts and documented inputs.
+- [Camera reliability study](studies/camera-reliability/README.md) looks at missing, frozen, and unusable snapshots during the same week. It includes the five-question report and a CPU-only rebuild command.
+
+Both workflows were contributed through [Panyawat’s fork](https://github.com/Panyawat-Phothiphanich/bangkok-cctv-campus-proximity/tree/b7536c7ff77782e68d03004e9c7564516f1cbd9a). The dashboard quick start above opens the school traffic presentation app.
+
 ## Where everything is
 
 | Course component | Where to look |
@@ -34,6 +41,6 @@ In a [human spot check of eight frames](docs/human-count-spot-check.md), YOLO di
 | Insights | The [findings report](dashboard/data/FINDINGS.md) explains the morning pattern, the Monday check, and the limits of the study. |
 | Additional data collection | The [source inventory](SUBMISSION.md#additional-data-collection) explains how OpenStreetMap, holiday records, and academic calendars were used. |
 
-The [submission guide](SUBMISSION.md) explains the full workflow, reproduction steps, and which original research-table scripts were unavailable. The [batch results and joined dataset](https://github.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/releases) are available separately.
+The [submission guide](SUBMISSION.md) explains the project workflow and reproduction steps. The [batch results and joined dataset](https://github.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/releases) are available separately.
 
 **AI use.** Our group used Codex to help implement and check the pipeline and dashboard, develop analysis code and charts, and prepare the documentation and source package. See the [submission guide](SUBMISSION.md) for the disclosure.

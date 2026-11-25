@@ -1,0 +1,46 @@
+[
+  {
+    "source_id": "holiday_mirror",
+    "source_kind": "community_mirror",
+    "note": "JSON download; attributed to government sources by its maintainer, not a direct government feed",
+    "snapshot": "inputs/snapshots/thai_public_holidays.json",
+    "source_url": "https://raw.githubusercontent.com/ppraserts/thailand-open-data/main/data/thai-public-holidays/all.json",
+    "resolved_url": "https://raw.githubusercontent.com/ppraserts/thailand-open-data/main/data/thai-public-holidays/all.json",
+    "retrieved_at": "2026-11-14T10:50:28.974447+00:00",
+    "sha256": "3a4efb2f9e03da78636082de4a921635bb2299cf396597bec0755cc21cded693",
+    "bytes": 17380
+  },
+  {
+    "source_id": "tat_calendar_2026",
+    "source_kind": "official_tourism_calendar",
+    "note": "Independent crosscheck of listed national holiday dates for the study week",
+    "snapshot": "inputs/snapshots/tat_calendar_2026.html",
+    "source_url": "https://www.thailandtravel.or.jp/about/calendar/",
+    "resolved_url": "https://www.thailandtravel.or.jp/about/calendar/",
+    "retrieved_at": "2026-11-14T10:50:30.005519+00:00",
+    "sha256": "9e67ef6cea80e5a0521a8772a0b902b711bd01edce963bb795c430714fea2f4e",
+    "bytes": 152114
+  },
+  {
+    "source_id": "chula_bba_calendar_2026",
+    "source_kind": "official_programme_calendar",
+    "note": "BBA International AY2026 only; not all Chula programmes",
+    "snapshot": "inputs/snapshots/chula_bba_calendar.html",
+    "source_url": "https://bba.acc.chula.ac.th/academic-calendar",
+    "resolved_url": "https://bba.acc.chula.ac.th/academic-calendar",
+    "retrieved_at": "2026-11-14T10:50:31.046874+00:00",
+    "sha256": "9a6e1d0983e9c221b70476c1565f1e35ca5b84007afa4eb26425f2eeef92217a",
+    "bytes": 1041300
+  },
+  {
+    "source_id": "horwang_calendar_2026",
+    "source_kind": "official_school_calendar",
+    "source_url": "https://www.horwang.ac.th/temp/calendar-m69-1.pdf",
+    "snapshot": "inputs/snapshots/horwang_calendar_2026.pdf",
+    "sha256": "8596bad3de5d07bba427ece8d57f83eb52bb902902eee6f2363d0ff030b440fe",
+    "bytes": 5386371,
+    "retrieved_at": "previously_cached; see school_freight fetch manifests",
+    "reviewed_at": "2026-11-14",
+    "note": "PDF pages 33, 43, 45 visually/textually reviewed; dates may change according to the school notice."
+  }
+]

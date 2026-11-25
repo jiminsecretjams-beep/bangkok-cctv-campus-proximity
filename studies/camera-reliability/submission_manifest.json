@@ -1,0 +1,50 @@
+{
+  "project": "Bangkok camera reliability",
+  "source_commit": "b7536c7ff77782e68d03004e9c7564516f1cbd9a",
+  "files": {
+    ".gitignore": {
+      "bytes": 28,
+      "sha256": "4560c21060a55294bf2a8a186ea1c454b7fae8a2483d1762fa23cbd57532ed8e"
+    },
+    "README.md": {
+      "bytes": 6060,
+      "sha256": "dc6dfc900dba49b97990547eddb42adec6b10d05ac19d281067f94f8a040b857"
+    },
+    "inputs/failure_kit.zip": {
+      "bytes": 635854,
+      "sha256": "9b40dab58ad97b42090c871ea88fc35ac84bc69c2253423c6d20c3d0a47b8798"
+    },
+    "inputs/sources.json": {
+      "bytes": 1285,
+      "sha256": "3f8ffb81713dbd337bf5a4800940c4d7b36d3e6ae86ef6609cc845c882a6c69b"
+    },
+    "inputs/vehicle_counts.csv.gz": {
+      "bytes": 314715,
+      "sha256": "23343a8784be144b625e491387519746bd6f7c0a94e57c9ff7122b608be7afbf"
+    },
+    "report.py": {
+      "bytes": 18261,
+      "sha256": "d74f3e527a399202ea1e5efac0975bd3a316e28235f78830fe9ccab65ef2f0a8"
+    },
+    "requirements.txt": {
+      "bytes": 256,
+      "sha256": "1a7ff2e8e90e5eda27448e1b0be54ee7aed0a975e584e4dcfc3fbc74590b384d"
+    },
+    "results/CCTV_Failures_Five_Questions.pdf": {
+      "bytes": 477341,
+      "sha256": "846935d88ccd2790214a7b085d30c497515eeb0db28224ab71755ded714bd197"
+    },
+    "results/summary.json": {
+      "bytes": 4891,
+      "sha256": "a0034bc60e00469d33a38633c64e73f6860118ebf81d30d122f4c7b32c359001"
+    },
+    "run.py": {
+      "bytes": 12024,
+      "sha256": "4a8152b50e05ae34ffcca7a3635772faef82bdc0dbc44d992b793e59e4923fb8"
+    },
+    "test_analysis.py": {
+      "bytes": 3513,
+      "sha256": "68f1c2d9cd245578879ae56ab63e4fda32d154faaff0230dfdd8d9f07ea86467"
+    }
+  }
+}

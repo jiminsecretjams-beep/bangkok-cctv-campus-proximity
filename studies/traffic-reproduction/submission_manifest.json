@@ -1,0 +1,514 @@
+{
+  "project": "Bangkok school traffic",
+  "files": {
+    ".gitignore": {
+      "bytes": 155,
+      "sha256": "6acf22a3124356404576484b91d7646fc3b3fb2aabb4a7a18b7b61aed461ea3a"
+    },
+    ".streamlit/config.toml": {
+      "bytes": 439,
+      "sha256": "12e939d53c756ba13166163e8da96dc7861a6814ee9f735ddddcc298a6e1b263"
+    },
+    "AGENTS.md": {
+      "bytes": 2690,
+      "sha256": "c6b781c72abff849461cd3f6f5d51fb652a9a86d18c37369fc4061b145d0ad5a"
+    },
+    "FINDINGS.md": {
+      "bytes": 16074,
+      "sha256": "7e16cf2da7a0f117d91af9cb8ff3fdbdf8a1addbc602ee69bc8bf7a07cd38afa"
+    },
+    "METHODS.md": {
+      "bytes": 9209,
+      "sha256": "6c9d246d04d81dec0fb98d9b57fdf3653009ae581a76edf9c4e956d124cd99e5"
+    },
+    "README.md": {
+      "bytes": 8671,
+      "sha256": "e9b3f575e7a3462ba70aadb4ce28e4a43f447faa3ce808b7d02ff2c1f03b3ee9"
+    },
+    "SOURCES.md": {
+      "bytes": 6516,
+      "sha256": "c1de5bc29cf81ff1c9a5b1584e89f928ef928d2c9989f0159e9833005ba67ca3"
+    },
+    "dashboard/app.py": {
+      "bytes": 40199,
+      "sha256": "340e60d3b3d3a7b29d7573b15c2cf2e43c62c685a93cac2a7b06de77bcf637ed"
+    },
+    "dashboard/dashboard_data.py": {
+      "bytes": 7825,
+      "sha256": "40919e410bc4e972b38631c7f62baac62e683df33c564670ff847f3d1feac6ed"
+    },
+    "inputs/calendar/national_holiday_review.json": {
+      "bytes": 819,
+      "sha256": "ecb0ff84e6e319ac95b06308d4911f6e54b198ed60dfd93074a36095c3aba47b"
+    },
+    "inputs/calendar/reviewed_sources.json": {
+      "bytes": 2297,
+      "sha256": "302e35645ba8603e9d786cb3bf97a6bd0be146299aa84e8748340e278eb97630"
+    },
+    "inputs/calendar/rules.json": {
+      "bytes": 3018,
+      "sha256": "a6182bf3f35c823a7b2b3579ddfde8a2106bd8f231166f995f48f14ad17a3428"
+    },
+    "inputs/campus/camera_institution_matches.csv": {
+      "bytes": 480866,
+      "sha256": "66e79e47a3b1bcb317214fadefafe6d36b1deab23ba8e2d202875fc101779e75"
+    },
+    "inputs/campus/cctv_campus_flags.csv": {
+      "bytes": 78824,
+      "sha256": "1b4af7b53ccf6fede9ac6cef4c5a08009dcc5ab8a28e04f4ea044a2e39cc8ac5"
+    },
+    "inputs/campus/institutions_clean.csv": {
+      "bytes": 361045,
+      "sha256": "baaae0537b81d971f4cc1407c2155d8cd1d939e9203646943c53aa3e715c719c"
+    },
+    "inputs/context/camera_road_context.csv": {
+      "bytes": 14879,
+      "sha256": "8a89e5e23ee95c93c1081331c92013c8b10bd6bc6c703324b0d2cef0c484b744"
+    },
+    "inputs/context/camera_timestamp_audit.csv": {
+      "bytes": 4187,
+      "sha256": "02667dc4f1fbe569c83cebe9ca822e7ce10e5d41bc16239fe20985868634fd37"
+    },
+    "inputs/context/rainfall.parquet": {
+      "bytes": 2134213,
+      "sha256": "4836ba609d13ce684cead670ab590842f9511ae84edb81a073220f6bf96aba74"
+    },
+    "inputs/context/school_schedules.csv": {
+      "bytes": 6789,
+      "sha256": "6358711434cb91223dfc37599f52e19d8974fed162100baca21e91adf66c8ca3"
+    },
+    "inputs/counts.parquet": {
+      "bytes": 11644493,
+      "sha256": "eb77e8cd0d98e0042f7c2fb56d747066bf264f16e9b94e3be4ad265d64f32c09"
+    },
+    "inputs/image_model.yaml": {
+      "bytes": 1963,
+      "sha256": "aabd5b552e73eeb67a0f861c2c2e72a86bbf4fe91ead2dda8304dfb5640af446"
+    },
+    "inputs/manifest.json": {
+      "bytes": 8225,
+      "sha256": "2581bf47086a90655818538b3b8ecec864c5a48898b7c15ee579e5ac131349a7"
+    },
+    "inputs/snapshots/chula_bba_calendar.html": {
+      "bytes": 1041300,
+      "sha256": "9a6e1d0983e9c221b70476c1565f1e35ca5b84007afa4eb26425f2eeef92217a"
+    },
+    "inputs/snapshots/horwang_calendar_2026.pdf": {
+      "bytes": 5386371,
+      "sha256": "8596bad3de5d07bba427ece8d57f83eb52bb902902eee6f2363d0ff030b440fe"
+    },
+    "inputs/snapshots/samsen_m1_1_term1_2026.jpg": {
+      "bytes": 557476,
+      "sha256": "80244451c99e014c0a9d78122ece6d582faa2340cbd81999d9b6273bac7106c3"
+    },
+    "inputs/snapshots/samsen_timetable_2026.html": {
+      "bytes": 181055,
+      "sha256": "ab11ef349af2fd56b3b4a819df1bbc123747491558f8a95d0b6223ea242cea8d"
+    },
+    "inputs/snapshots/tat_calendar_2026.html": {
+      "bytes": 152114,
+      "sha256": "9e67ef6cea80e5a0521a8772a0b902b711bd01edce963bb795c430714fea2f4e"
+    },
+    "inputs/snapshots/thai_public_holidays.json": {
+      "bytes": 17380,
+      "sha256": "3a4efb2f9e03da78636082de4a921635bb2299cf396597bec0755cc21cded693"
+    },
+    "pyproject.toml": {
+      "bytes": 724,
+      "sha256": "b286d8904b74f845906ee3ea26df824337055af12f9f5fc425e3b5a067fd0d34"
+    },
+    "results/analysis/01_same_clock_hour.png": {
+      "bytes": 95656,
+      "sha256": "ec4ae669b523f05ecf19a18ead946414e4d973ae5585c3919a15e5e4631ac54d"
+    },
+    "results/analysis/02_camera_period_distribution.png": {
+      "bytes": 115592,
+      "sha256": "5c41092ef1cde7a6b1155206773daa7ae388165c1713d996bbbf02131ca9fc65"
+    },
+    "results/analysis/03_coverage.png": {
+      "bytes": 62330,
+      "sha256": "92f1ebfa801cf87e5b53d60078d12aad9e95eb251497a9028bc66635ff69b0ba"
+    },
+    "results/analysis/04_proximity_context.png": {
+      "bytes": 76861,
+      "sha256": "52fd40bc36bdd738a7d7a2b4ecd832aeb12dcdac121338f272f397504522d058"
+    },
+    "results/analysis/05_morning_vehicle_mix.png": {
+      "bytes": 42058,
+      "sha256": "68bc83ebccdcc7853550bbdbac129b1623bc2b2270dea0e95a0d542375dc35c9"
+    },
+    "results/analysis/06_school_baseline_sensitivity.png": {
+      "bytes": 53900,
+      "sha256": "51dc3f1bc7c4866ee46e0747e81e80ee607f426ef9fa2b9a6d0680c03678ef89"
+    },
+    "results/analysis/07_school_case_profiles.png": {
+      "bytes": 195100,
+      "sha256": "7ffb606fc91acb4d555ca3f2b01d088cc9eb750ab649cc8486a187b24b585834"
+    },
+    "results/analysis/balanced_camera_day_period.csv": {
+      "bytes": 186473,
+      "sha256": "8dca701fe606231dda20197c7e7de6d9a8738a14cbed853d486e6a3e7a9d1602"
+    },
+    "results/analysis/camera_commute_effects.csv": {
+      "bytes": 56393,
+      "sha256": "3d33a6082bb42786dfeffdc1411d59986699af265d8d6a2fab1d7275d8b92f23"
+    },
+    "results/analysis/camera_context.csv": {
+      "bytes": 39278,
+      "sha256": "bd06789a470e58d993f06bb9976fac12acd0eca5a229c7fe76e572ea93567cf6"
+    },
+    "results/analysis/camera_day_hour.csv": {
+      "bytes": 1725792,
+      "sha256": "a8df4cc3aede9a0faede8557c3758582000cbcb3129db102c2a6c3be6bed24d1"
+    },
+    "results/analysis/camera_day_hour.parquet": {
+      "bytes": 245204,
+      "sha256": "10a84b1786cfc8eec2c281924b923cc63e799f3e349b982d5932697ca67fff8a"
+    },
+    "results/analysis/camera_eligibility.csv": {
+      "bytes": 1397,
+      "sha256": "e0d0a0ec7c6ad1ab3d84c5fcedb37afc701084048ac5830a9bef7dab5862418b"
+    },
+    "results/analysis/camera_period_comparisons.csv": {
+      "bytes": 97432,
+      "sha256": "ed4cdab5cd01a0b69332ce1a1cc82701b1415303a47166b8cd05b18035313236"
+    },
+    "results/analysis/coverage_by_date_hour.csv": {
+      "bytes": 2688,
+      "sha256": "dc68478e9440981c47057f083b6c5c73ae60efa424b285a4e71457561e585ccf"
+    },
+    "results/analysis/headline_period_evidence.csv": {
+      "bytes": 518,
+      "sha256": "eddf1e2a0f1f0d2c4f2604b617a08be0736a4ad296a47fc429a636576b400c60"
+    },
+    "results/analysis/independent_verification.json": {
+      "bytes": 473,
+      "sha256": "1b1b599c8395eea3be01b780761e97d9560e7b86b1369f85806345ccce37f119"
+    },
+    "results/analysis/location_effects.csv": {
+      "bytes": 9683,
+      "sha256": "a753101650bcef550b97b1a38ef02c592c9dcaff5a9030268573a39daad9b1b0"
+    },
+    "results/analysis/location_resampling.csv": {
+      "bytes": 311,
+      "sha256": "4a8e2533a79719c0ad3523c88b24f1a2de941211e6f249ecc645222541eea53e"
+    },
+    "results/analysis/manifest.json": {
+      "bytes": 6229,
+      "sha256": "fb3f897ca82c651172458334136fe9b8203a1965e9e18db9e2ab02964db6bb1c"
+    },
+    "results/analysis/matched_hourly_profile.csv": {
+      "bytes": 648,
+      "sha256": "209782801355741317cd217cb5626bf429925142c49cf66f0f32e7a7975c04fe"
+    },
+    "results/analysis/model_rain_coverage.csv": {
+      "bytes": 4514,
+      "sha256": "3a54cccad20b5196ae3b52c1d432c93be34884742240d9e40b87088529d3ae01"
+    },
+    "results/analysis/peak_candidate_daily_evidence.csv": {
+      "bytes": 437894,
+      "sha256": "3b8d37641e3f8c63237cc48264e1bb5874985c0b4756dbd41f6cbcefccaec173"
+    },
+    "results/analysis/proximity_band_comparisons.csv": {
+      "bytes": 310,
+      "sha256": "eaf6fc451c4fb014717e7d9299f8a97233380cb108c362582068359ad9de2798"
+    },
+    "results/analysis/road_class_proximity_context.csv": {
+      "bytes": 616,
+      "sha256": "d286f2f6a37b9cb18e865b07c5fb8ed5a7684578b5a795f2658c7d8843e726a6"
+    },
+    "results/analysis/same_clock_hour_comparisons.csv": {
+      "bytes": 177262,
+      "sha256": "1c27135c376cbb960706272060bd20e2f299dffc98a2c944a584fd660e784edf"
+    },
+    "results/analysis/school_anchor_daily_sensitivity.csv": {
+      "bytes": 149891,
+      "sha256": "69b65721c0d655c5c88e6a6fdf3a382496f15fc664b323c28e232746dc864e6a"
+    },
+    "results/analysis/school_anchor_summary.csv": {
+      "bytes": 19507,
+      "sha256": "85cd0aab5069713d47136a5875612dff6c7ac4d24b5ddf7ab3d71c7d799bb00b"
+    },
+    "results/analysis/school_case_headline_evidence.csv": {
+      "bytes": 1656,
+      "sha256": "2f255c985cb7678145912e153821814506af9bf07c66bd21d5a4bd8e54f4255d"
+    },
+    "results/analysis/school_type_screen.csv": {
+      "bytes": 339178,
+      "sha256": "d614457135e37272855973e05c8dbb9f71524b6f4dcc1f613699848eef87f9a4"
+    },
+    "results/analysis/sensitivity_checks.csv": {
+      "bytes": 7623,
+      "sha256": "10fcbf79b865ba4d283d1954145ca256371b35c7a405b5f93c48a218d13aea71"
+    },
+    "results/analysis/summary.json": {
+      "bytes": 2106,
+      "sha256": "37120443df98b49f6740d8d9eca90255f6357399a6d5928fcf4d212e9670b0d7"
+    },
+    "results/analysis/vehicle_class_comparisons.csv": {
+      "bytes": 1647,
+      "sha256": "0a4e3c2f57a013cb64ff9aa8948fd917cd900bc159a020487e7da7eb1637eb4a"
+    },
+    "results/analysis/verification.json": {
+      "bytes": 625,
+      "sha256": "f1a3ef49e0e4868a0621b7845f3558a492f1b95e8c1476a7beb34d4b13f262fb"
+    },
+    "results/analysis/weekday_peak_holdout.csv": {
+      "bytes": 47037,
+      "sha256": "98f10cb5072214485475bb0013f067d9202e995725ece4b5694d98f7563d9ed7"
+    },
+    "results/calendar/calendar_rules.csv": {
+      "bytes": 2023,
+      "sha256": "a1e6013640230c55903ed751866bae17553d6012bc55eef2b6da718e3ffb0472"
+    },
+    "results/calendar/camera_calendar_daily.csv": {
+      "bytes": 56795,
+      "sha256": "ad60bfb420112527ddcc1148a7d7e63e99ffaf9aa2a727cb568f4497302a1ca3"
+    },
+    "results/calendar/camera_institution_calendar_daily.csv": {
+      "bytes": 6272918,
+      "sha256": "345eb5a1263f579a9e4fab5ea2856826d535ff5be47e90d67670a929a4055899"
+    },
+    "results/calendar/date_labels.csv": {
+      "bytes": 1226,
+      "sha256": "7c3cd8adddc69bb8b4d13bf607ada6ebe24c8114a4e7d1c1c1ac96b613e548c1"
+    },
+    "results/calendar/institution_scope_calendar_daily.csv": {
+      "bytes": 2404925,
+      "sha256": "1764dd69c1046a2c2e5120cbfc37d71ab4b34dc2ece5bf631e9a7b026f43364b"
+    },
+    "results/calendar/manifest.json": {
+      "bytes": 5222,
+      "sha256": "7f2cd13bd1618c2c8cdaef168289972a9df849801f0f91e0cbb40dea386122aa"
+    },
+    "results/calendar/national_holiday_review.json": {
+      "bytes": 819,
+      "sha256": "ecb0ff84e6e319ac95b06308d4911f6e54b198ed60dfd93074a36095c3aba47b"
+    },
+    "results/calendar/observation_calendar_labels.csv": {
+      "bytes": 16659021,
+      "sha256": "628721a8861aa9db2393eb43f9451ce5d8a5757cb2ce9ab9505619b71f3fc237"
+    },
+    "results/calendar/observations_with_calendar.parquet": {
+      "bytes": 11625258,
+      "sha256": "a1ce98f1018593d08535db7e1573b13fa530597d5c493abcbe5a49c07f3e5c30"
+    },
+    "results/calendar/public_holidays.csv": {
+      "bytes": 14563,
+      "sha256": "0cfb333e3e076a573284c335eee3187654fe14767003cbf7cef77ed2eabdab72"
+    },
+    "results/calendar/reviewed_sources.json": {
+      "bytes": 2297,
+      "sha256": "302e35645ba8603e9d786cb3bf97a6bd0be146299aa84e8748340e278eb97630"
+    },
+    "results/calendar/rules.json": {
+      "bytes": 3018,
+      "sha256": "a6182bf3f35c823a7b2b3579ddfde8a2106bd8f231166f995f48f14ad17a3428"
+    },
+    "results/calendar/schedule_evidence_reference.csv": {
+      "bytes": 8176,
+      "sha256": "d8f3b401dea1e0bd8d83dd8ddfba4f88eee59be6ba5f651ef0036a924e8b8b0a"
+    },
+    "results/calendar/summary.json": {
+      "bytes": 901,
+      "sha256": "e99f5010efed988f465771134d4e6811b6c6b38ef002b424400adfab85244df6"
+    },
+    "results/calendar/verification.json": {
+      "bytes": 742,
+      "sha256": "1dda402a49b7ed1c1eb2af9885d87abf5a8bdfc7bc6ab17149a4e5cd4dd2eebc"
+    },
+    "results/dashboard/FINDINGS.md": {
+      "bytes": 16074,
+      "sha256": "7e16cf2da7a0f117d91af9cb8ff3fdbdf8a1addbc602ee69bc8bf7a07cd38afa"
+    },
+    "results/dashboard/METHODS.md": {
+      "bytes": 9209,
+      "sha256": "6c9d246d04d81dec0fb98d9b57fdf3653009ae581a76edf9c4e956d124cd99e5"
+    },
+    "results/dashboard/anchors.parquet": {
+      "bytes": 35689,
+      "sha256": "3aa2c23def49b4108dff15484e0712a852d0b7c9c2e346a161b8160046f38ad6"
+    },
+    "results/dashboard/calendar.parquet": {
+      "bytes": 65896,
+      "sha256": "6cb6b80a5fba189709c8a75092b1d82dc2a07403c379a1d01b5cbf2ee73e100b"
+    },
+    "results/dashboard/camera_calendar.parquet": {
+      "bytes": 11398,
+      "sha256": "9c387eb47c6a417c3162db1597212ae4f8ee36d86a105356eb625df715b44768"
+    },
+    "results/dashboard/class_summary.parquet": {
+      "bytes": 6777,
+      "sha256": "d329b216fe120b07377ce70efb0131ab353da4aa6989c33d8cb8bc0741aea1ec"
+    },
+    "results/dashboard/context.parquet": {
+      "bytes": 27813,
+      "sha256": "57c748b3b5a32a460a3a97fef09de9dc5f5bd08146026cd6cad7a20d73f70921"
+    },
+    "results/dashboard/daily.parquet": {
+      "bytes": 28079,
+      "sha256": "2e7122d6387141440772c4b5446884217e9c4a6e3626feb705111a8641b39ee9"
+    },
+    "results/dashboard/dates.parquet": {
+      "bytes": 6964,
+      "sha256": "1dfc42c8820b81755e4582b6cb7d2750b33b7b819ddda20cb8fa50f0741172b7"
+    },
+    "results/dashboard/eligibility.parquet": {
+      "bytes": 3683,
+      "sha256": "160e0d44d61cdfcadb75daa1310c91aa19e2bf9bc2c050340d5471ca0d85dd4a"
+    },
+    "results/dashboard/frames.parquet": {
+      "bytes": 2754433,
+      "sha256": "8cd4f10d802144d110943e5879bf12e7c0fc463421d8c90566d8db487553a546"
+    },
+    "results/dashboard/frozen_periods.parquet": {
+      "bytes": 49863,
+      "sha256": "38dbc349b302ff4d7dbd65e5f51272a6c41ec8ac650bf4a6c0b0cd500c95b173"
+    },
+    "results/dashboard/hourly.parquet": {
+      "bytes": 217000,
+      "sha256": "51ac1fdd9bac70ec541ffff12abdaf906d13cbb678cd14e5f4ba99c649b83d00"
+    },
+    "results/dashboard/institutions.parquet": {
+      "bytes": 64268,
+      "sha256": "441a1a6a6dbb92b0cf08698c9b4e5bf0527be55c65485ccc0c698784b8544a84"
+    },
+    "results/dashboard/links.parquet": {
+      "bytes": 34290,
+      "sha256": "f26ebd382c67285b9d8b6e5fa101769ff6c2256e5daed85435b94200a026753f"
+    },
+    "results/dashboard/manifest.json": {
+      "bytes": 5455,
+      "sha256": "e0f3a486049b0135683e1f21dc82cd1132b80f1d1d8fb77d2e9d1ca25c5b1159"
+    },
+    "results/dashboard/peaks.parquet": {
+      "bytes": 35438,
+      "sha256": "97aeea3c9f3bcf8c68e938c820c0bb253b8b644f28fde5a07ef00600b215a1d9"
+    },
+    "results/dashboard/rules.json": {
+      "bytes": 3018,
+      "sha256": "a6182bf3f35c823a7b2b3579ddfde8a2106bd8f231166f995f48f14ad17a3428"
+    },
+    "results/dashboard/sensitivity.parquet": {
+      "bytes": 9074,
+      "sha256": "382a6af7dc333196dd5905730384889862ecc8246709c1cf1a41ba0e510eef45"
+    },
+    "results/dashboard/sources.json": {
+      "bytes": 2297,
+      "sha256": "302e35645ba8603e9d786cb3bf97a6bd0be146299aa84e8748340e278eb97630"
+    },
+    "results/dashboard/summary.json": {
+      "bytes": 2106,
+      "sha256": "37120443df98b49f6740d8d9eca90255f6357399a6d5928fcf4d212e9670b0d7"
+    },
+    "results/dashboard/verification.json": {
+      "bytes": 473,
+      "sha256": "1b1b599c8395eea3be01b780761e97d9560e7b86b1369f85806345ccce37f119"
+    },
+    "results/verification.json": {
+      "bytes": 1236,
+      "sha256": "791a838f738f6e10af2f2891f5ed472e9ec98a17e16c3b3df02534e62da22c33"
+    },
+    "run.py": {
+      "bytes": 4890,
+      "sha256": "85e1f957cd2129e032800de3bb49188f54e566f3cbb7b2bcd0a638b55dbeab21"
+    },
+    "tests/conftest.py": {
+      "bytes": 3546,
+      "sha256": "6886f52084e210d4cbd85122d18b27fe28dcaef2bacc2ecd29cb0292dfe50aa0"
+    },
+    "tests/test_calendar.py": {
+      "bytes": 6011,
+      "sha256": "ceae9e30db863a812f32d22af260d63afce1e4d39458dc0d0e9cd5064ff954f5"
+    },
+    "tests/test_dashboard_app.py": {
+      "bytes": 3058,
+      "sha256": "b9152ed3cfbf5caca57dcb2dd65daad915c631a4f2f794f956b0ccf2dc0c61a5"
+    },
+    "tests/test_dashboard_data.py": {
+      "bytes": 3873,
+      "sha256": "d3b5f68b2eb61caf4f58a6643dc212b13dde4d54180044276f711f4bac20b3d4"
+    },
+    "tests/test_inference.py": {
+      "bytes": 5088,
+      "sha256": "2e6f05961001aca15c12365f48d2e2d59a3feb0442bfccb730d92ea6e76d4eee"
+    },
+    "tests/test_traffic.py": {
+      "bytes": 4617,
+      "sha256": "969472bbcd331ce34c6d4c149b62d43c5832b872b9aae64fb3db84fa61ebca4f"
+    },
+    "uv.lock": {
+      "bytes": 226231,
+      "sha256": "a6b901cb1707cca18d0f93680eae15d1781eba59e3190f3bb1617b2d9400cd89"
+    },
+    "workflow/__init__.py": {
+      "bytes": 77,
+      "sha256": "b24eca66429f2f1c075ef80b0c62f716c52de2c759abb7f31995961570c569d8"
+    },
+    "workflow/analysis.py": {
+      "bytes": 27081,
+      "sha256": "d507b96b09cb56d775f5025c17a595074543bfa500599d7fc2f59e9a3f800077"
+    },
+    "workflow/calendar.py": {
+      "bytes": 20113,
+      "sha256": "89a2e90bfba2a10b9b75def1c4d31b81f705c5b32dec32632a477693515c9e6d"
+    },
+    "workflow/dashboard_bundle.py": {
+      "bytes": 5078,
+      "sha256": "0f5aa4532a6bd52099289d2e6ca38fcb7f0b52e5a0920516d157e3024a73e0aa"
+    },
+    "workflow/image_processing/__init__.py": {
+      "bytes": 82,
+      "sha256": "3d5e5f425a8c617fef81b2a711a0667fd0a083bc43c022d5e7fc0ee09df6c665"
+    },
+    "workflow/image_processing/config.py": {
+      "bytes": 5257,
+      "sha256": "74f55cf8fc71130e9dafde0180a28847c1a8186eb276b0620dc6c27489b11224"
+    },
+    "workflow/image_processing/detector.py": {
+      "bytes": 3582,
+      "sha256": "2f8d7f9073315cc468562fa6e0f6a7357fbbca46d11c157a9050f5a421d848af"
+    },
+    "workflow/image_processing/full_frame.py": {
+      "bytes": 8931,
+      "sha256": "82fe718063baae746dea0e08b0283b69edf98b955241ecc0ea924d1918d0ccc0"
+    },
+    "workflow/image_processing/imaging.py": {
+      "bytes": 309,
+      "sha256": "9363a459afe8b1f74688bbac04906048a6b838b7538cf25c6d52992169b09f5d"
+    },
+    "workflow/image_processing/inventory.py": {
+      "bytes": 8868,
+      "sha256": "f2a22845dc9f9d069218418bb6a5ddcb87b6b73845d35ac470fb378ec9071295"
+    },
+    "workflow/image_processing/observations.py": {
+      "bytes": 1911,
+      "sha256": "51d489a7293294bab329b05c42944db07374df22a184a2eb8d590aa940016c65"
+    },
+    "workflow/image_processing/quality.py": {
+      "bytes": 8229,
+      "sha256": "4b3e901b490cb895dec0180a1216fc714d77d8818f3498f7c2d0c1e817496633"
+    },
+    "workflow/image_processing/storage.py": {
+      "bytes": 3948,
+      "sha256": "dac70f94e0aee87c6ccace600b88208ebb29e679696e75938c4237423925f825"
+    },
+    "workflow/image_processing/timestamps.py": {
+      "bytes": 1834,
+      "sha256": "31cb57e618c1048a6d1b33e16ef8679235cbf42809b7e9f53679ebe93cf38437"
+    },
+    "workflow/inference.py": {
+      "bytes": 4281,
+      "sha256": "f1690cd1009598d67174a0b088e09a344b7c806d189007790a0b0739d4ee74c9"
+    },
+    "workflow/traffic.py": {
+      "bytes": 14154,
+      "sha256": "215a2b0fd405844e019b56f0ec240aa3aae8f6a9e03ac42c049525fa7408b910"
+    },
+    "workflow/verify.py": {
+      "bytes": 6371,
+      "sha256": "8a73d4177376a109f54aa126d9048cb615fe5a8b4c252d76aa822495c359d7c2"
+    }
+  },
+  "source_commit": "b7536c7ff77782e68d03004e9c7564516f1cbd9a"
+}

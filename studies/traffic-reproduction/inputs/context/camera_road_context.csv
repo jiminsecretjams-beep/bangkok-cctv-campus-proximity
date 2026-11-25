@@ -1,0 +1,101 @@
+camera_id,road_osm_id,road_name,road_key,road_class,lanes,snap_distance_m,bridge,layer,coordinate_status
+1028,way/38000192,ถนนประดิพัทธ์,ประดิพัทธ์,secondary,4,1.1936333912071533,,0,supplied_coordinate_not_surveyed
+1039,way/1057814157,ถนนจักรพรรดิพงษ์,จักรพรรดิพงษ์,secondary,,5.102083508327532,,0,supplied_coordinate_not_surveyed
+1060,way/25707446,ถนนกรุงเกษม,กรุงเกษม,secondary,3,4.467116898832255,,0,supplied_coordinate_not_surveyed
+1063,way/156420652,ถนนพระรามที่ 5,พระราม5,secondary,4,3.9095909302196996,,0,supplied_coordinate_not_surveyed
+1070,way/1181345440,ถนนกำแพงเพชร 1,กำแพงเพชร1,primary,5,2.3782407168443016,,0,supplied_coordinate_not_surveyed
+1071,way/168680412,,,primary_link,,0.7617618023148179,,0,supplied_coordinate_not_surveyed
+1076,way/1156238577,ถนนราชพฤกษ์,ราชพฤกษ์,primary,3,0.09713944783890649,,0,supplied_coordinate_not_surveyed
+1078,way/338036004,ถนนเจริญนคร,เจริญนคร,secondary,3,3.2159135676505453,,0,supplied_coordinate_not_surveyed
+11,way/37844339,ถนนราชวิถี,ราชวิถี,primary,2,3.2848468832112783,,0,supplied_coordinate_not_surveyed
+1103,way/830801745,ถนนราชพฤกษ์,ราชพฤกษ์,secondary,,2.564208993654939,,0,supplied_coordinate_not_surveyed
+1112,way/283449197,ถนนวิภาวดีรังสิต,วิภาวดีรังสิต,secondary,,3.4494170282607604,,0,supplied_coordinate_not_surveyed
+112,way/1426814870,ถนนเทียมร่วมมิตร,เทียมร่วมมิตร,tertiary_link,3,2.7572559204806333,,0,supplied_coordinate_not_surveyed
+1132,way/749195387,ถนนเจริญนคร,เจริญนคร,secondary,,1.6277031256898222,,0,supplied_coordinate_not_surveyed
+118,way/465371336,ถนนสุทธิสารวินิจฉัย,สุทธิสารวินิจฉัย,secondary,,3.23209217696134,,0,supplied_coordinate_not_surveyed
+1188,way/1075535631,ถนนบรมราชชนนี,บรมราชชนนี,trunk,,2.9823032849422604,,0,supplied_coordinate_not_surveyed
+119,way/876391536,ถนนรัชดาภิเษก,รัชดาภิเษก,primary,3,3.7130353557478077,,0,supplied_coordinate_not_surveyed
+1195,way/199388243,ถนนเจริญนคร,เจริญนคร,secondary,,3.2594291231525063,,0,supplied_coordinate_not_surveyed
+120,way/942823785,ถนนสุทธิสารวินิจฉัย,สุทธิสารวินิจฉัย,tertiary,,4.563504349268928,,0,supplied_coordinate_not_surveyed
+123,way/1056828157,ถนนลาดพร้าว,ลาดพร้าว,primary,4,0.2882007879403826,,0,supplied_coordinate_not_surveyed
+124,way/1156917463,ถนนลาดพร้าว,ลาดพร้าว,primary,4,6.931395233709765,,0,supplied_coordinate_not_surveyed
+125,way/1156849749,ถนนรัชดาภิเษก,รัชดาภิเษก,primary,5,3.409359326505111,,0,supplied_coordinate_not_surveyed
+126,way/94132389,ซอยรัชดาภิเษก 30,ซอยรัชดาภิเษก30,residential,,1.3395596979206672,,0,supplied_coordinate_not_surveyed
+127,way/156763612,ถนนรัชดาภิเษก,รัชดาภิเษก,primary,4,0.7040337020417298,,0,supplied_coordinate_not_surveyed
+135,way/1203475019,ถนนรัชดาภิเษก,รัชดาภิเษก,primary,2,0.6077554694983839,,0,supplied_coordinate_not_surveyed
+136,way/156763633,ถนนลาดพร้าว,ลาดพร้าว,primary,3,0.683959570815146,,0,supplied_coordinate_not_surveyed
+1361,way/662277570,ถนนสามเสน,สามเสน,secondary,,1.7136370181693477,,0,supplied_coordinate_not_surveyed
+1362,way/864207009,ถนนนครไชยศรี,นครไชยศรี,secondary,4,2.9494006113736515,,0,supplied_coordinate_not_surveyed
+1368,way/150890456,ถนนพระรามที่ 5,พระราม5,unclassified,,6.960925746007823,,0,supplied_coordinate_not_surveyed
+137,way/32007706,ถนนลาดพร้าว,ลาดพร้าว,primary,3,0.7116617979923595,,0,supplied_coordinate_not_surveyed
+139,way/967554819,ถนนพหลโยธิน,พหลโยธิน,primary,3,3.0897225938248734,,0,supplied_coordinate_not_surveyed
+1408,way/968239910,ถนนเทียมร่วมมิตร,เทียมร่วมมิตร,tertiary,2,1.8234257813057064,,0,supplied_coordinate_not_surveyed
+141,way/230331271,ถนนวิภาวดีรังสิต,วิภาวดีรังสิต,secondary,,0.40184175689856094,,0,supplied_coordinate_not_surveyed
+150,way/1177473316,ถนนพระรามที่ 6,พระราม6,secondary,8,1.1952823419272927,,0,supplied_coordinate_not_surveyed
+158,way/885462547,ถนนเจริญนคร,เจริญนคร,secondary,,4.264098011444237,,0,supplied_coordinate_not_surveyed
+1589,way/25745467,ถนนจักรพรรดิพงษ์,จักรพรรดิพงษ์,secondary,4,9.489781769656823,,0,supplied_coordinate_not_surveyed
+169,way/659037012,ถนนวงศ์สว่าง,วงศ์สว่าง,primary,3,4.319745443877026,,0,supplied_coordinate_not_surveyed
+170,way/864243453,ถนนพหลโยธิน,พหลโยธิน,primary,,2.6429375730797844,,0,supplied_coordinate_not_surveyed
+176,way/1024210487,ถนนพหลโยธิน,พหลโยธิน,primary,3,2.834723756806087,,0,supplied_coordinate_not_surveyed
+177,way/1534157669,ถนนกำแพงเพชร 1,กำแพงเพชร1,primary,5,1.2930668102137095,,0,supplied_coordinate_not_surveyed
+178,way/464688530,ถนนพหลโยธิน,พหลโยธิน,primary,3,2.6473017439848903,,0,supplied_coordinate_not_surveyed
+179,way/124874080,ถนนพหลโยธิน,พหลโยธิน,primary,3,3.093536119389629,,0,supplied_coordinate_not_surveyed
+18,way/38000192,ถนนประดิพัทธ์,ประดิพัทธ์,secondary,4,5.763229058297637,,0,supplied_coordinate_not_surveyed
+1804,way/934209381,ถนนอ่อนนุช,อ่อนนุช,primary,4,3.012311806956343,,0,supplied_coordinate_not_surveyed
+1815,way/458620724,ถนนอโศก-ดินแดง,อโศกดินแดง,primary,2,1.2338285534048812,,0,supplied_coordinate_not_surveyed
+186,way/694465355,ถนนรัชดาภิเษก,รัชดาภิเษก,secondary,,5.3321400719076335,,0,supplied_coordinate_not_surveyed
+188,way/1104464504,ถนนพระรามที่ 3,พระราม3,primary,4,0.5849911745427094,,0,supplied_coordinate_not_surveyed
+194,way/1137525146,ถนนสาทรเหนือ,สาทรเหนือ,primary,5,3.59549061977505,,0,supplied_coordinate_not_surveyed
+196,way/1163410994,ถนนนราธิวาสราชนครินทร์,นราธิวาสราชนครินทร์,primary,5,4.173050427641853,,0,supplied_coordinate_not_surveyed
+206,way/859521011,ถนนนราธิวาสราชนครินทร์,นราธิวาสราชนครินทร์,primary,5,0.022125419399850372,,0,supplied_coordinate_not_surveyed
+211,way/156763650,ถนนรัชดาภิเษก,รัชดาภิเษก,primary,4,2.4705338242429224,,0,supplied_coordinate_not_surveyed
+212,way/156763642,ถนนรัชดาภิเษก,รัชดาภิเษก,primary,4,7.205729958662889,,0,supplied_coordinate_not_surveyed
+215,way/156763622,ถนนรัชดาภิเษก,รัชดาภิเษก,primary,4,3.567002040231552,,0,supplied_coordinate_not_surveyed
+219,way/156763635,ถนนรัชดาภิเษก,รัชดาภิเษก,primary,4,1.3621326423743456,,0,supplied_coordinate_not_surveyed
+224,way/156763607,ถนนรัชดาภิเษก,รัชดาภิเษก,primary,4,2.2945641096037095,,0,supplied_coordinate_not_surveyed
+225,way/156763612,ถนนรัชดาภิเษก,รัชดาภิเษก,primary,4,0.6817334940969523,,0,supplied_coordinate_not_surveyed
+228,way/680485336,ถนนหลวง,หลวง,tertiary,4,14.698281996372835,,0,supplied_coordinate_not_surveyed
+230,way/156420657,ถนนพระรามที่ 5,พระราม5,secondary,4,2.9833442810814232,,0,supplied_coordinate_not_surveyed
+233,way/156420652,ถนนพระรามที่ 5,พระราม5,secondary,4,0.5229642708492865,,0,supplied_coordinate_not_surveyed
+239,way/1086380512,ถนนพญาไท,พญาไท,primary,4,0.5930312219408013,,0,supplied_coordinate_not_surveyed
+250,way/921145616,ถนนเพชรบุรี,เพชรบุรี,primary,,6.4621949415120294,,0,supplied_coordinate_not_surveyed
+251,way/453709724,ถนนเพชรบุรี,เพชรบุรี,primary,,1.0708902967941227,,0,supplied_coordinate_not_surveyed
+256,way/632450279,ถนนเพชรบุรี,เพชรบุรี,primary,2,0.2316450172822838,,0,supplied_coordinate_not_surveyed
+26,way/364700041,ถนนมไหสวรรย์,มไหสวรรย์,secondary,,3.4280382385784725,,0,supplied_coordinate_not_surveyed
+277,way/82251718,วงเวียนอนุสาวรีย์ชัยสมรภูมิ,วงเวียนอนุสาวรีย์ชัยสมรภูมิ,primary,7,22.51129631531097,,0,supplied_coordinate_not_surveyed
+301,way/24790112,ถนนนครราชสีมา,นครราชสีมา,secondary,,1.2030280101901232,,0,supplied_coordinate_not_surveyed
+32,way/695534765,ถนนอินทรพิทักษ์,อินทรพิทักษ์,primary,,3.0923683151600945,,0,supplied_coordinate_not_surveyed
+332,way/419857364,ถนนนครไชยศรี,นครไชยศรี,secondary,4,0.3727771024097873,,0,supplied_coordinate_not_surveyed
+36,way/968239919,,,primary_link,2,0.8893274834177407,,0,supplied_coordinate_not_surveyed
+363,way/262818815,ถนนสุโขทัย,สุโขทัย,tertiary,6,3.1497828217692936,,0,supplied_coordinate_not_surveyed
+370,way/662277570,ถนนสามเสน,สามเสน,secondary,,0.2922051593612441,,0,supplied_coordinate_not_surveyed
+371,way/1059339515,ถนนกรุงเกษม,กรุงเกษม,secondary,4,2.8530216492519025,,0,supplied_coordinate_not_surveyed
+395,way/178354011,ถนนบำรุงเมือง,บำรุงเมือง,secondary,,4.134490654833094,,0,supplied_coordinate_not_surveyed
+411,way/300803475,ถนนพระอาทิตย์,พระอาทิตย์,tertiary,2,0.6269914319941339,,0,supplied_coordinate_not_surveyed
+412,way/300803475,ถนนพระอาทิตย์,พระอาทิตย์,tertiary,2,0.7982645691821253,,0,supplied_coordinate_not_surveyed
+413,way/123950254,ถนนตะนาว,ตะนาว,tertiary,1,6.915358573856512,,0,road_name_corrected_using_Thai_metadata_and_visual_context_not_surveyed
+414,way/24680969,ถนนสะพานพุทธ,สะพานพุทธ,tertiary,,2.491185351231499,,0,supplied_coordinate_not_surveyed
+432,way/824816473,ถนนพระรามที่ 4,พระราม4,primary,5,4.5726802536692945,,0,supplied_coordinate_not_surveyed
+500,way/1315261187,ถนนราชดำริ,ราชดำริ,secondary,,0.07507806809782827,,0,supplied_coordinate_not_surveyed
+529,way/636746578,ถนนบรมราชชนนี,บรมราชชนนี,trunk,3,0.8327776542587215,,0,supplied_coordinate_not_surveyed
+542,way/1220057347,ถนนสารสิน,สารสิน,tertiary_link,4,1.6357396294310411,,0,supplied_coordinate_not_surveyed
+546,way/150890456,ถนนพระรามที่ 5,พระราม5,unclassified,,1.142409484667366,,0,supplied_coordinate_not_surveyed
+556,way/155967429,ถนนสุโขทัย,สุโขทัย,tertiary,6,2.449504929234552,,0,supplied_coordinate_not_surveyed
+569,way/176762396,,,secondary_link,,1.0060765057877676,,0,supplied_coordinate_not_surveyed
+572,way/119461229,,,primary_link,,0.9702625284406456,yes,3,supplied_coordinate_not_surveyed
+576,way/244663778,ถนนพระสุเมรุ,พระสุเมรุ,secondary,2,1.3840759331391335,,0,supplied_coordinate_not_surveyed
+595,way/168554958,ถนนอิสรภาพ,อิสรภาพ,secondary,2,4.423272967104586,,0,supplied_coordinate_not_surveyed
+599,way/39943703,ถนนสุรศักดิ์,สุรศักดิ์,secondary,4,1.0551981468466998,,0,supplied_coordinate_not_surveyed
+603,way/1087133037,ถนนสีลม,สีลม,secondary,3,1.585776271122926,,0,supplied_coordinate_not_surveyed
+604,way/1208343975,ถนนสีลม,สีลม,secondary,3,3.4656583803322283,,0,supplied_coordinate_not_surveyed
+619,way/1025100194,ถนนอังรีดูนังต์,อังรีดูนังต์,secondary,3,5.285041679960202,,0,supplied_coordinate_not_surveyed
+630,way/1106110685,ถนนพระรามที่ 5,พระราม5,secondary,4,0.15253420504876256,,0,supplied_coordinate_not_surveyed
+68,way/123951459,ถนนวรจักร,วรจักร,secondary,6,1.2604240958447575,,0,supplied_coordinate_not_surveyed
+70,way/662277570,ถนนสามเสน,สามเสน,secondary,,8.793202885874216,,0,supplied_coordinate_not_surveyed
+75,way/859521010,ถนนรัชดาภิเษก,รัชดาภิเษก,secondary,,4.115769445428753,,0,supplied_coordinate_not_surveyed
+82,way/1487591091,ถนนราชปรารภ,ราชปรารภ,secondary,6,2.9710544277443134,,0,supplied_coordinate_not_surveyed
+88,way/1153326624,ถนนจันทน์,จันทน์,secondary,4,0.5142613148913477,,0,supplied_coordinate_not_surveyed
+913,way/157690711,ถนนเจริญกรุง,เจริญกรุง,primary,,2.698141754279919,,0,supplied_coordinate_not_surveyed
+915,way/96160799,ถนนอินทรพิทักษ์,อินทรพิทักษ์,primary,,2.5671762061459305,,0,supplied_coordinate_not_surveyed
+938,way/156810578,,,primary_link,1,0.5025798972106775,,0,supplied_coordinate_not_surveyed
+939,way/692176408,ถนนรามคำแหง,รามคำแหง,primary,,22.12045536604878,,0,supplied_coordinate_not_surveyed
