@@ -22,6 +22,8 @@ Among **89 camera views** with balanced coverage, the median within-camera weekd
 
 The numbers describe vehicles visible per snapshot, including parked vehicles. The study covers one week, and school attendance and the share of traffic caused by school commutes remain unverified. See the [findings](dashboard/data/FINDINGS.md) and [methods](dashboard/data/METHODS.md).
 
+In a [human spot check of eight frames](docs/human-count-spot-check.md), YOLO differed from a teammate’s count by an average of **2.75 vehicles per frame** in absolute terms.
+
 ## Where everything is
 
 | Course component | Where to look |
