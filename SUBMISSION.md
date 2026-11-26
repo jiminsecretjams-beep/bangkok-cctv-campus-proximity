@@ -26,6 +26,10 @@ Open http://127.0.0.1:8501. The dashboard includes the verified portable data bu
 
 The dashboard reports visible vehicles per snapshot, including parked vehicles. School attendance and the contribution of school commutes remain unverified. The study week contains no listed public holiday.
 
+## Human count validation
+
+Teammates counted 40 morning frames from 20 cameras, with a weekday and weekend frame matched by camera and clock hour. The report explains the counting protocol, the differences by day type, and how to check the results against the submitted worksheets and saved YOLO26x counts. [Human count validation report](docs/human-count-spot-check.md#matched-morning-review)
+
 ## Additional data collection
 
 Web scraping and API collection are separate from the data engineering component. This inventory records the source material and where it is used.

@@ -1,0 +1,21 @@
+sample,car_count,motorcycle_count,bus_count,truck_count,bicycle_count,total,uncertain,notes
+A01,12,3,0,1,0,16,0,The types of cars are hard to
+A02,0,0,0,0,0,0,0,-
+A03,18,7,0,0,0,25,4,"There are multiple cars in the distance, Traffic is expected to get worse. It is harder to  Identify which objects are cars"
+A04,18,22,0,0,0,40,9,"Rush hour, Motorcycles are more present, Traffic is expected to get worse. Vehicles in the distance are hard to Identify"
+A05,17,11,0,1,0,29,2,-
+A06,11,3,1,3,0,18,2,A lot of Motorcycles are parked on the road sides
+A07,3,1,0,1,0,5,0,-
+A08,5,10,1,3,0,19,2,A lot of Motorcycles are parked on the road sides
+A09,11,19,0,2,0,32,1,-
+A10,3,4,0,0,0,7,0,There is very little traffic
+A11,5,3,1,0,0,9,1,The vehicles type is hard to distinguish from the image quality.
+A12,9,6,1,0,0,16,1,"Some vehicles are hard to indentify if they are front facing, Trffic is expected to get worse"
+A13,0,3,0,0,0,3,0,-
+A14,4,1,0,0,0,5,0,The mortorcycle is a tuktuk
+A15,9,2,2,0,0,13,1,-
+A16,5,8,0,1,0,14,1,Surprisingly Low traffic
+A17,0,0,0,0,0,0,0,There is no vehicles in the road assigned to this camera
+A18,2,1,1,0,0,4,0,-
+A19,2,12,2,1,0,17,1,Traffic is expected to get worse.
+A20,13,3,0,0,0,16,0,Traffic on the left lane is significantly better that that on the right lane

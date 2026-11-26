@@ -1,0 +1,21 @@
+sample,car_count,motorcycle_count,bus_count,truck_count,bicycle_count,total,uncertain,notes
+B01,3,2,0,0,0,5,,I'm pretty sure that thing in the fark back's a car
+B02,8,1,0,0,0,9,,very colorful row of taxis :)
+B03,6,5,0,0,0,11,1,
+B04,15,4,0,2,0,21,,
+B05,5,0,0,0,0,5,,
+B06,13,16,1,1,0,31,,
+B07,32,15,0,1,0,48,,
+B08,2,3,0,0,0,5,,
+B09,4,3,0,0,0,7,,
+B10,4,0,0,0,0,4,2,"Mysterious blobs of shape on the edge of the road, but the road looks to be a highway, so I would assum that they're not bicycles or motorcycles"
+B11,3,8,0,1,0,12,,
+B12,3,1,0,0,0,4,,
+B13,11,5,0,1,0,17,,
+B14,3,1,1,1,0,6,,
+B15,6,5,0,2,0,13,,There's a Tuktuk in the image. Not sure how I should classify it
+B16,10,6,1,1,0,18,,
+B17,7,3,0,0,0,10,,
+B18,11,6,0,2,0,19,,
+B19,5,0,0,1,0,6,3,"Same road as B10, and once again there are random pixels that could be bikes, but I will assume not"
+B20,2,5,1,1,0,9,,

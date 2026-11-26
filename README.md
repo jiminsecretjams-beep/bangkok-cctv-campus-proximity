@@ -22,7 +22,7 @@ Among **89 camera views** with balanced coverage, the median within-camera weekd
 
 The numbers describe vehicles visible per snapshot, including parked vehicles. The study covers one week, and school attendance and the share of traffic caused by school commutes remain unverified. See the [findings](dashboard/data/FINDINGS.md) and [methods](dashboard/data/METHODS.md).
 
-In a [human spot check of eight frames](docs/human-count-spot-check.md), YOLO differed from a teammate’s count by an average of **2.75 vehicles per frame** in absolute terms.
+Teammates reviewed **40 matched morning frames**. Manual counts were higher on weekdays for **15 of 20 cameras**. Compared with the reviewers, YOLO counted an average of **6.90 fewer vehicles per weekday frame** and **2.85 fewer per weekend frame** in this sample. [Human count review and evidence](docs/human-count-spot-check.md#matched-morning-review)
 
 ## Reproduce the analysis
 

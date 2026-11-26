@@ -1,0 +1,24 @@
+{
+  "seed": 20261126,
+  "population": "Dashboard primary balanced-camera cohort, accepted morning days and hours, temporal-eligible snapshots, excluding cameras used in the earlier eight-frame spot check",
+  "eligible_candidate_cameras": 81,
+  "draw": "Sample 20 distinct cameras without replacement. Allocate weekend day and local hour by pack quotas. Choose a weekday date uniformly among that camera's accepted days with that hour. Choose one eligible frame uniformly within each chosen camera, date, and hour. Randomize order within each ZIP.",
+  "model_count_used_for_selection": false,
+  "scope": "Matched review of weekday and weekend morning snapshots used for the traffic comparison. Coverage rules and prior-camera exclusion limit inference to this sampling design.",
+  "packs": {
+    "A": {
+      "images": 20,
+      "pairs": 10,
+      "weekdays": 10,
+      "weekends": 10,
+      "zip_bytes": 513862
+    },
+    "B": {
+      "images": 20,
+      "pairs": 10,
+      "weekdays": 10,
+      "weekends": 10,
+      "zip_bytes": 497485
+    }
+  }
+}
