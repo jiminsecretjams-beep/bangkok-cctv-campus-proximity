@@ -1,11 +1,13 @@
 import sys
 import unittest
 from pathlib import Path
+from tempfile import TemporaryDirectory
 
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "scripts"))
-from add_public_holidays import attach_holidays, validate_reference
+from add_public_holidays import attach_holidays, build, validate_reference
+from build_analysis_dataset import ROOT
 
 
 def reference():
@@ -14,6 +16,18 @@ def reference():
 
 
 class PublicHolidayContracts(unittest.TestCase):
+    def test_external_baseline_reaches_content_validation(self):
+        with TemporaryDirectory() as directory:
+            baseline = Path(directory)
+            (baseline / "manifest.json").write_text('{"status": "partial"}\n')
+            with self.assertRaisesRegex(ValueError, "Expected the completed baseline analysis handoff"):
+                build(
+                    baseline,
+                    ROOT / "data/raw/webscraping/data/public_holidays.csv",
+                    ROOT / "data/reference/public_holidays/source_manifest.json",
+                    baseline / "output",
+                )
+
     def test_uncovered_year_is_unknown_not_false(self):
         frame = pd.DataFrame({"date": ["2027-08-12"]})
         result = attach_holidays(frame, frame.date, reference(), {2026})

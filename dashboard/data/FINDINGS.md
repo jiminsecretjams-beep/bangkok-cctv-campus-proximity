@@ -18,12 +18,12 @@ The morning/midday ratio is also larger on weekdays than on weekends: the median
 
 The hour-by-hour comparison is most pronounced at 07:00-07:59, where the median weekday/weekend ratio is about **1.95**. That profile uses up to 99 matched cameras and has a less restrictive per-hour eligibility rule than the 89-camera primary table; do not mix its denominator with the primary table.
 
-![Same-clock profile](01_same_clock_hour.png)
-![Camera-level period differences](02_camera_period_distribution.png)
+![Same-clock profile](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/01_same_clock_hour.png)
+![Camera-level period differences](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/02_camera_period_distribution.png)
 
 **Project implication:** the dashboard should compare weekday and weekend observations at the same camera and clock time. A single all-day average would hide the most relevant pattern.
 
-Evidence: [primary table](headline_period_evidence.csv), [camera effects](camera_commute_effects.csv), [hourly profile](matched_hourly_profile.csv), [balanced daily values](balanced_camera_day_period.csv).
+Evidence: [primary table](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/headline_period_evidence.csv), [camera effects](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/camera_commute_effects.csv), [hourly profile](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/matched_hourly_profile.csv), [balanced daily values](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/balanced_camera_day_period.csv).
 
 ## 2. The direction survives several reasonable checks; the exact size varies
 
@@ -44,7 +44,7 @@ Nearby views are not independent locations. Grouping supplied coordinates within
 
 **Weather remains unresolved:** both the complete-day and separate-period dry-only screens lack enough matched weekdays and both weekend days. In particular, every Saturday observation at 07:00-08:59 has model rain above the 0.1 mm dry threshold. Their estimates are explicitly unavailable, not zero. The Sunday-only comparison still has a positive morning contrast, but we cannot claim the weekday contrast has been isolated from rainfall. The weather input is gridded model precipitation, not street-level rain measurements.
 
-Evidence: [sensitivity checks](sensitivity_checks.csv), [location resampling](location_resampling.csv), [model rain coverage](model_rain_coverage.csv).
+Evidence: [sensitivity checks](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/sensitivity_checks.csv), [location resampling](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/location_resampling.csv), [model rain coverage](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/model_rain_coverage.csv).
 
 ## 3. Weekday peaks often repeat on a day not used to select them
 
@@ -59,7 +59,7 @@ The morning weekday/weekend contrast being strongest does not mean every view's 
 
 This is a one-day directional check, not validation of causal school effects, detector accuracy or long-term forecasting. Selection across multiple windows inflates discovery contrasts; the held-out day must not be used to switch to a different window.
 
-Evidence: [selected peaks and Monday results](weekday_peak_holdout.csv), [all candidate/day evidence](peak_candidate_daily_evidence.csv).
+Evidence: [selected peaks and Monday results](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/weekday_peak_holdout.csv), [all candidate/day evidence](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/peak_candidate_daily_evidence.csv).
 
 ## 4. Individual school-adjacent views have different signatures
 
@@ -74,11 +74,11 @@ These four cases were included because of existing school-context documentation,
 
 Triam Udom's view is a useful counterexample: a weekday morning increase coexists with lower weekday afternoon counts than on the weekend. Saipanya has a particularly pronounced afternoon contrast. Neither establishes school attendance as the cause; road layout, destinations, parking, retail and camera visibility can differ.
 
-![Four school-context views](07_school_case_profiles.png)
+![Four school-context views](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/07_school_case_profiles.png)
 
 **Project implication:** present local exceptions alongside the overall pattern. A universal statement that every school has a weekday afternoon spike would contradict the data.
 
-Evidence: [camera effects](camera_commute_effects.csv), [daily period values](balanced_camera_day_period.csv), existing school-context and timestamp audits referenced in the dataset guide.
+Evidence: [camera effects](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/camera_commute_effects.csv), [daily period values](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/balanced_camera_day_period.csv), existing school-context and timestamp audits referenced in the dataset guide.
 
 ## 5. A documented timetable is useful context, but precise school-time claims remain sensitive
 
@@ -95,9 +95,9 @@ Samsen's 16:40 case is a candidate for discussion: the mean count is higher than
 
 Horwang has calendar-supported term context but unknown daily attendance. Its 25-28 August competition involves a subgroup; it is not a whole-school closure. The Samsen timetable is for one class, with its exact August effective interval unverified. Camera-overlay audits also show discrepancies from collection time. No clocks have been silently corrected, and no programme/class schedule is broadcast to all students.
 
-![School baseline comparison](06_school_baseline_sensitivity.png)
+![School baseline comparison](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/06_school_baseline_sensitivity.png)
 
-Evidence: [headline case values](school_case_headline_evidence.csv), [30/60/90-minute and shifted-anchor summaries](school_anchor_summary.csv), [daily case evidence](school_anchor_daily_sensitivity.csv), [calendar integration](../academic_calendar_20261114/README.md).
+Evidence: [headline case values](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/school_case_headline_evidence.csv), [30/60/90-minute and shifted-anchor summaries](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/school_anchor_summary.csv), [daily case evidence](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/school_anchor_daily_sensitivity.csv), [calendar integration](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/calendar/summary.json).
 
 ## 6. Vehicle mix adds detail: the morning pattern is not a uniform truck increase
 
@@ -107,11 +107,11 @@ The median camera's motorcycle share is **2.45 percentage points higher** on wee
 
 Class-specific percentage ratios use smaller cohorts when weekend class counts are sparse: cars +60.2% (89 cameras), motorcycles +92.9% (68), and trucks +9.3% (71) in the morning. Those percentages do not use identical class cohorts. Bus and bicycle ratios are too sparse for a strong general narrative; bicycle percentage summaries with fewer than ten stable reference cameras are suppressed.
 
-![Morning mix changes](05_morning_vehicle_mix.png)
+![Morning mix changes](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/05_morning_vehicle_mix.png)
 
 **Project implication:** show class composition alongside total counts. The results are compatible with a commute-like car/motorcycle pattern. The model's vehicle labels do not identify passengers, trip purpose, factory origin or whether a vehicle is parked.
 
-Evidence: [vehicle-class comparisons](vehicle_class_comparisons.csv).
+Evidence: [vehicle-class comparisons](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/vehicle_class_comparisons.csv).
 
 ## 7. Proximity alone does not establish a school effect
 
@@ -123,9 +123,9 @@ After excluding two known metadata-label discrepancy cases, exploratory distance
 
 These reference-point distances are not entrance distances; road hierarchy, view scale, parked-vehicle baseline and mapping completeness remain confounded. Road-stratified summaries are provided for inspection, without calling them causal controls or fitted risk estimates.
 
-![Proximity context](04_proximity_context.png)
+![Proximity context](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/04_proximity_context.png)
 
-Evidence: [screened catalogue](school_type_screen.csv), [camera context](camera_context.csv), [distance bands](proximity_band_comparisons.csv), [road strata](road_class_proximity_context.csv).
+Evidence: [screened catalogue](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/school_type_screen.csv), [camera context](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/camera_context.csv), [distance bands](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/proximity_band_comparisons.csv), [road strata](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/road_class_proximity_context.csv).
 
 ## 8. Data coverage prevents a false traffic-collapse story
 
@@ -133,9 +133,9 @@ On **27 August, no camera-hour passes the coverage rule at 06:00, 07:00 or 08:00
 
 Out of 10,500 full camera/day/hour cells from 06:00-21:00, 10,037 pass the coverage rule. The 21:00 endpoint hour is excluded from full-hour analyses. All source images remain accounted for in the input; an excluded cell means insufficient usable data, not no traffic.
 
-![Coverage](03_coverage.png)
+![Coverage](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/03_coverage.png)
 
-Evidence: [coverage table](coverage_by_date_hour.csv), [hour cube](camera_day_hour.parquet).
+Evidence: [coverage table](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/coverage_by_date_hour.csv), [hour cube](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/camera_day_hour.parquet).
 
 ## What the project can say
 
@@ -157,4 +157,4 @@ The final dashboard, slides and video are separate deliverables. This stage supp
 
 Codex assisted with Python implementation, analytical design, chart generation, consistency checks and drafting interpretations. The underlying YOLO26x detections were already completed. No source images were re-inferred, no teammate review forms were changed, and AI-generated judgments are not presented as independent human validation.
 
-See [METHODS.md](METHODS.md), [README.md](README.md), [verification.json](verification.json) and [manifest.json](manifest.json) for assumptions, commands and provenance.
+See [METHODS.md](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/METHODS.md), [README.md](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/README.md), [independent verification](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/independent_verification.json) and [manifest.json](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/manifest.json) for assumptions, commands and provenance.

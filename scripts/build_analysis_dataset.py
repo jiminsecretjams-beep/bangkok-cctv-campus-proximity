@@ -31,6 +31,13 @@ def sha256(path):
         return hashlib.file_digest(stream, "sha256").hexdigest()
 
 
+def source_metadata(path):
+    """Record a checkout-relative path when available and hash the source."""
+    resolved = Path(path).resolve()
+    recorded = resolved.relative_to(ROOT) if resolved.is_relative_to(ROOT) else resolved
+    return dict(path=str(recorded), sha256=sha256(resolved))
+
+
 def require(condition, message):
     if not condition:
         raise ValueError(message)
@@ -157,7 +164,7 @@ def write_csv(frame, path):
 
 def build(traffic_folder, flags_path, calendar_path, output):
     paths = {"traffic": traffic_folder / "traffic_full_frame.parquet", "traffic_import_manifest": traffic_folder / "import_manifest.json", "campus_flags": flags_path, "supplied_calendar": calendar_path, "builder": Path(__file__)}
-    sources = {name: dict(path=str(path.resolve().relative_to(ROOT)) if path.resolve().is_relative_to(ROOT) else str(path.resolve()), sha256=sha256(path)) for name, path in paths.items()}
+    sources = {name: source_metadata(path) for name, path in paths.items()}
     if output.exists():
         previous = json.loads((output / "manifest.json").read_text())
         require(previous["sources"] == sources, "Existing output belongs to different inputs/code; choose a fresh --output path")

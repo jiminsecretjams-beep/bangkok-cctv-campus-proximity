@@ -11,7 +11,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from build_analysis_dataset import ROOT, require, sha256, write_csv
+from build_analysis_dataset import ROOT, require, sha256, source_metadata, write_csv
 
 
 def validate_reference(holidays, metadata):
@@ -54,7 +54,7 @@ def build(baseline, reference, reference_manifest, output):
               "public_holiday_source_manifest": reference_manifest, "holiday_builder": Path(__file__),
               "holiday_snapshot": ROOT / "data/reference/public_holidays/thai_public_holidays.json",
               "provided_holiday_script": ROOT / meta["script_path"]}
-    sources = {key: dict(path=str(path.resolve().relative_to(ROOT)), sha256=sha256(path)) for key, path in inputs.items()}
+    sources = {key: source_metadata(path) for key, path in inputs.items()}
     if output.exists():
         previous = json.loads((output / "manifest.json").read_text())
         require(previous["sources"] == sources, "Different inputs/code; choose a fresh output path")

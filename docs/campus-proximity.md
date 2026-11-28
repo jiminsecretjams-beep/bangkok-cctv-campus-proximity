@@ -86,12 +86,12 @@ Download the completed [traffic and campus analysis handoff with public-holiday 
 
 The code is in this repository; large generated analysis tables are distributed through the Release asset. To recreate the join, use the [pinned processing environment and import instructions](https://github.com/Panyawat-Phothiphanich/bangkok-cctv-campus-proximity/blob/a0128c67985bd3e6f92d1e28f8f671dfc6c8a8a3/processing/README.md) with the original combined traffic import. Downloading and using the completed joined dataset does not require rerunning image inference.
 
-After all four whole-image processing batches are imported, build the downstream analysis handoff with the existing frozen worker environment:
+After importing the four batches under `processing/data/combined/full_image_job`, run these commands from the project root using the pinned processing environment. [Batch import guide](../processing/README.md)
 
 ```sh
-bangkok-cctv-worker-batch-01/processing/.venv/bin/python scripts/build_analysis_dataset.py
-bangkok-cctv-worker-batch-01/processing/.venv/bin/python scripts/add_public_holidays.py
-bangkok-cctv-worker-batch-01/processing/.venv/bin/python -m unittest discover -s tests/analysis -v
+processing/.venv/bin/python scripts/build_analysis_dataset.py --traffic-folder processing/data/combined/full_image_job
+processing/.venv/bin/python scripts/add_public_holidays.py
+processing/.venv/bin/python -m unittest discover -s tests/analysis -v
 ```
 
 The default input is the completed local combined job `whole-image-f4ba6aa4fcd2ca80`; use `--traffic-folder` for another verified import location. Outputs are under `data/analysis/campus_traffic/`, excluded from Git because they contain the full observation dataset. The builder preserves all original traffic rows, counts, nulls, time fields, quality flags and batch provenance, and enforces a many-to-one join to the 100-row campus dimension. It does not rerun inference or modify the frozen processing checkout. An identical rerun verifies existing output checksums; different inputs/code require a fresh `--output` path.

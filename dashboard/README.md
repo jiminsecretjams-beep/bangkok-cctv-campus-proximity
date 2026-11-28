@@ -62,15 +62,17 @@ The tests reconcile all six class comparisons against frozen verified results, c
 
 `data/manifest.json` contains a dataset ID, source hashes and file hashes. The app verifies the bundle before displaying data. It contains selected observation fields, complete hourly cells, accepted-day period tables, camera/institution context, scoped calendars and school-anchor evidence. It excludes source images, model files, private IP addresses and environment credentials.
 
-From the original project root, regenerate the bundle with:
+From the project root, these commands rebuild the analysis and its companion dashboard bundle from the saved counts.
 
 ```sh
-.venv/bin/python scripts/package_dashboard_data.py
+cd studies/traffic-reproduction
+uv sync --frozen --no-dev --python 3.11
+uv run --frozen --no-dev python run.py rebuild --output results/rebuilt
 ```
 
-That command verifies the frozen analysis artifacts first. CSV input uses round-trip float parsing so class ratios at a threshold do not silently change during packaging. Source analysis and calendar files are not modified.
+Choose an empty output folder for each rebuild. The command writes the companion dashboard data to `results/rebuilt/dashboard`. The presentation dashboard opens with the saved tables included in its own `data/` folder. [Study rebuild guide](../studies/traffic-reproduction/README.md#recreate-the-results)
 
-The original findings and methods are available through the dashboard. Their Markdown references point to supporting tables in the original analysis package; they are not a substitute for that complete research archive.
+The findings download links to the published evidence and works as a standalone Markdown file with an internet connection. The study report in the source ZIP links directly to the charts and tables included there. [Findings and bundled evidence](../studies/traffic-reproduction/FINDINGS.md)
 
 ## Limits and scope
 

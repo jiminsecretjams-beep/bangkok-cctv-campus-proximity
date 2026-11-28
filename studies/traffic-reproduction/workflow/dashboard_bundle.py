@@ -10,10 +10,23 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 CAMPUS = ROOT / "inputs/campus"
+PUBLISHED_STUDY = (
+    "https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/"
+    "4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/"
+)
 
 
 def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def downloadable_findings():
+    """Keep evidence links usable when the report is downloaded on its own."""
+    report = (ROOT / "FINDINGS.md").read_text(encoding="utf-8")
+    report = report.replace("](results/", f"]({PUBLISHED_STUDY}results/")
+    for name in ("METHODS.md", "README.md"):
+        report = report.replace(f"]({name})", f"]({PUBLISHED_STUDY}{name})")
+    return report
 
 
 def build(analysis, calendar, output):
@@ -103,8 +116,8 @@ def build(analysis, calendar, output):
     for name, source in json_files.items():
         sources[str(source.relative_to(ROOT))] = digest(source)
         (output / name).write_bytes(source.read_bytes())
-    for name in ["FINDINGS.md", "METHODS.md"]:
-        (output / name).write_bytes((ROOT / name).read_bytes())
+    (output / "FINDINGS.md").write_text(downloadable_findings(), encoding="utf-8")
+    (output / "METHODS.md").write_bytes((ROOT / "METHODS.md").read_bytes())
     assert len(frames) == 61319 and frames.image_id.is_unique and len(hourly) == 10500
     frozen = pd.read_parquet(output / "frozen_periods.parquet")
     assert len(frozen) == 267

@@ -1,5 +1,8 @@
 import io
 import json
+import re
+from pathlib import Path
+from urllib.parse import urlsplit
 
 import numpy as np
 import pandas as pd
@@ -15,6 +18,22 @@ from dashboard_data import (
     select_context,
     timeline,
 )
+from workflow.dashboard_bundle import downloadable_findings
+
+
+def test_findings_evidence_links_work_in_the_checkout_and_download():
+    root = Path(__file__).resolve().parents[1]
+    links = re.compile(r"\]\(([^)\s]+)\)")
+    checkout_links = links.findall((root / "FINDINGS.md").read_text(encoding="utf-8"))
+    assert checkout_links
+    for target in checkout_links:
+        url = urlsplit(target)
+        if not url.scheme and url.path:
+            assert (root / url.path).is_file(), target
+
+    report = downloadable_findings()
+    assert report == (root / "results/dashboard/FINDINGS.md").read_text(encoding="utf-8")
+    assert all(urlsplit(target).scheme == "https" for target in links.findall(report))
 
 
 @pytest.mark.parametrize("metric", ["vehicle", "car", "motorcycle", "truck", "bus", "bicycle"])
