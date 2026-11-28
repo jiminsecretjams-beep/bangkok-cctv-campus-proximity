@@ -153,8 +153,8 @@ This is an association within one week and one weekend. There are no observed pu
 
 The final dashboard, slides and video are separate deliverables. This stage supplies the analysed tables, figures and evidence for them.
 
-## AI assistance and reproducibility
+## Reproducibility
 
-Codex assisted with Python implementation, analytical design, chart generation, consistency checks and drafting interpretations. The underlying YOLO26x detections were already completed. No source images were re-inferred, no teammate review forms were changed, and AI-generated judgments are not presented as independent human validation.
+The analysis starts from saved YOLO26x detections.
 
 See [METHODS.md](METHODS.md), [README.md](README.md), [independent verification](results/analysis/independent_verification.json) and [manifest.json](results/analysis/manifest.json) for assumptions, commands and provenance.

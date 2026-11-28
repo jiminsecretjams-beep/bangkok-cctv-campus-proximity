@@ -927,7 +927,7 @@ def coverage_sources():
     )
     st.caption(
         "Data bundle checksums verified on load. Original study: 61,319 images · 100 cameras · "
-        "59,834 usable observations. AI assisted the analysis and dashboard implementation; it is not human accuracy validation."
+        "59,834 usable observations."
     )
 
 

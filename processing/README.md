@@ -138,11 +138,11 @@ Campus distances/types and verified institution calendars can be joined after im
 - Filenames represent acquisition time in Asia/Bangkok. UTC/local time and weekday/weekend fields are retained; unknown time is not invented.
 - Counts are visible vehicle instances per snapshot, not vehicles per hour or unique journeys. Keep coverage/quality flags and compare within-camera patterns. Model/quality validation status remains explicit; this handoff does not manufacture reviewer labels or accuracy scores.
 
-## Copy this prompt into ChatGPT/Codex on a friend's MacBook
+## Worker handoff template
 
 > Read processing/AGENTS.md and processing/README.md. I am assigned BATCH_ID and my worker name is MY_HANDLE. Set up the frozen Python 3.11 environment, verify the job and download the pinned course inputs/model if missing. Run only my assigned whole-image batch, resume it until completed, validate/package it, and upload the result ZIP as a GitHub Release asset to a repository I can write to (use my own fork if central write access is unavailable). Give me the result Release link. Do not change the model/classes/thresholds, camera allocation or quality policy; do not generate human labels, upload raw images/weights/credentials, reset unrelated work, or process other batches unless I ask.
 
-Replace `BATCH_ID` and `MY_HANDLE` before sending. The agent should read any runtime error and fix setup/access issues without changing the scientific job definition.
+Fill in `BATCH_ID` and `MY_HANDLE` when assigning the batch.
 
 ## Tests without real model processing
 

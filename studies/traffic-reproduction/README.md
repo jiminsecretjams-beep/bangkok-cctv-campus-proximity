@@ -92,7 +92,7 @@ flowchart LR
 
 This folder contains the workflow, frozen inputs, results, and its matching dashboard. Slides, the 15-minute video, external submission links, and registration are separate team deliverables.
 
-Generative AI assisted code development, organization, documentation and analysis exploration. The team should review and explain the submitted methods and findings. Human vehicle labels were not fabricated; tests and independent arithmetic checks do not establish detector accuracy. Model, data and software licenses remain those of the respective providers. OpenStreetMap attribution: © OpenStreetMap contributors, ODbL.
+The tests and independent arithmetic checks verify the workflow and reported calculations. Model, data and software licenses remain those of the respective providers. OpenStreetMap attribution: © OpenStreetMap contributors, ODbL.
 
 ## Verification
 

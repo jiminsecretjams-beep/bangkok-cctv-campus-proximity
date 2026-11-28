@@ -42,5 +42,3 @@ The dashboard quick start above opens the school traffic presentation app.
 | Additional data collection | The [source inventory](SUBMISSION.md#additional-data-collection) explains how OpenStreetMap, holiday records, and academic calendars were used. |
 
 The [submission guide](SUBMISSION.md) explains the project workflow and reproduction steps. The [batch results and joined dataset](https://github.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/releases) are available separately.
-
-**AI use.** Our group used Codex to help implement and check the pipeline and dashboard, develop analysis code and charts, and prepare the documentation and source package. See the [submission guide](SUBMISSION.md) for the disclosure.

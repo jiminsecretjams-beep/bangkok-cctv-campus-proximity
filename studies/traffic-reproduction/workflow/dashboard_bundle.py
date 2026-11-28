@@ -14,6 +14,10 @@ PUBLISHED_STUDY = (
     "https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/"
     "4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/"
 )
+REBUILD_GUIDE_URL = (
+    "https://github.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/"
+    "blob/main/studies/traffic-reproduction/README.md"
+)
 
 
 def digest(path):
@@ -24,9 +28,8 @@ def downloadable_findings():
     """Keep evidence links usable when the report is downloaded on its own."""
     report = (ROOT / "FINDINGS.md").read_text(encoding="utf-8")
     report = report.replace("](results/", f"]({PUBLISHED_STUDY}results/")
-    for name in ("METHODS.md", "README.md"):
-        report = report.replace(f"]({name})", f"]({PUBLISHED_STUDY}{name})")
-    return report
+    report = report.replace("](METHODS.md)", f"]({PUBLISHED_STUDY}METHODS.md)")
+    return report.replace("](README.md)", f"]({REBUILD_GUIDE_URL})")
 
 
 def build(analysis, calendar, output):

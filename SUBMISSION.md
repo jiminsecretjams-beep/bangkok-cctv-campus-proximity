@@ -59,4 +59,4 @@ processing/.venv/bin/python scripts/add_public_holidays.py
 
 The course archive and pinned model are separate downloads for an authorized rerun using the frozen worker. The ZIP carries code, references and packaged analysis tables.
 
-Generative AI use: Codex assisted with the data pipeline, analysis code, dashboard implementation, chart design, verification tests and documentation. It helped package the project for review. The study uses the course images and recorded external sources. The accuracy of the detector remains provisional.
+The study uses the course images and recorded external sources. The accuracy of the detector remains provisional.

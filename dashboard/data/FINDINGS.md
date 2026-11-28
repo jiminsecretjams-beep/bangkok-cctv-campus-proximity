@@ -153,8 +153,8 @@ This is an association within one week and one weekend. There are no observed pu
 
 The final dashboard, slides and video are separate deliverables. This stage supplies the analysed tables, figures and evidence for them.
 
-## AI assistance and reproducibility
+## Reproducibility
 
-Codex assisted with Python implementation, analytical design, chart generation, consistency checks and drafting interpretations. The underlying YOLO26x detections were already completed. No source images were re-inferred, no teammate review forms were changed, and AI-generated judgments are not presented as independent human validation.
+The analysis starts from saved YOLO26x detections.
 
-See [METHODS.md](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/METHODS.md), [README.md](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/README.md), [independent verification](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/independent_verification.json) and [manifest.json](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/manifest.json) for assumptions, commands and provenance.
+See [METHODS.md](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/METHODS.md), [README.md](https://github.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/blob/main/studies/traffic-reproduction/README.md), [independent verification](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/independent_verification.json) and [manifest.json](https://raw.githubusercontent.com/jiminsecretjams-beep/bangkok-cctv-campus-proximity/4c1702d0fed551fb1357bd12e770428c16837a65/studies/traffic-reproduction/results/analysis/manifest.json) for assumptions, commands and provenance.

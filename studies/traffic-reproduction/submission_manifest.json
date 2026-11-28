@@ -14,24 +14,24 @@
       "sha256": "c6b781c72abff849461cd3f6f5d51fb652a9a86d18c37369fc4061b145d0ad5a"
     },
     "FINDINGS.md": {
-      "bytes": 16593,
-      "sha256": "48e369c3157f0d517657d55513bf2e07c68f928506edbf431854fa906d86c2cd"
+      "bytes": 16287,
+      "sha256": "251dab57b2fb1957709c071ea0e6da0ffd849ece5eef4b8c56739dac334e5c9d"
     },
     "METHODS.md": {
       "bytes": 9209,
       "sha256": "6c9d246d04d81dec0fb98d9b57fdf3653009ae581a76edf9c4e956d124cd99e5"
     },
     "README.md": {
-      "bytes": 8436,
-      "sha256": "3db47afaf2e9f0880c400851806dd4cc05b132de04f0b297ba8ed1775c972f04"
+      "bytes": 8243,
+      "sha256": "9448f1bb152cffa64a295af0342b5a8607ee5d36c3fa7bef90ca75ab4ea1beaa"
     },
     "SOURCES.md": {
       "bytes": 6516,
       "sha256": "c1de5bc29cf81ff1c9a5b1584e89f928ef928d2c9989f0159e9833005ba67ca3"
     },
     "dashboard/app.py": {
-      "bytes": 40199,
-      "sha256": "340e60d3b3d3a7b29d7573b15c2cf2e43c62c685a93cac2a7b06de77bcf637ed"
+      "bytes": 40107,
+      "sha256": "fc4155d7d609e9506c6b0ef6f052b1c62046f040c456b93a00cef5f43b988368"
     },
     "dashboard/dashboard_data.py": {
       "bytes": 7825,
@@ -318,8 +318,8 @@
       "sha256": "1dda402a49b7ed1c1eb2af9885d87abf5a8bdfc7bc6ab17149a4e5cd4dd2eebc"
     },
     "results/dashboard/FINDINGS.md": {
-      "bytes": 21708,
-      "sha256": "d0bcf8f5cad25bc2dc9f1ed6d5b15a8665e38032a2eb7b5853f5297300a90caa"
+      "bytes": 21356,
+      "sha256": "cb87d2b4076520456131c8de867bc3a8e5c33cb1a9e8cad4e85bdd78bb8cec32"
     },
     "results/dashboard/METHODS.md": {
       "bytes": 9209,
@@ -379,7 +379,7 @@
     },
     "results/dashboard/manifest.json": {
       "bytes": 5455,
-      "sha256": "f7ed188b68e1bc45d273350e316c0dd0ab929e4c17ea953c5de0b3894f0377c0"
+      "sha256": "9a0ee4eca66d912e97875985fc0ee5b637224f3519cd3bbbfa11c08e74878115"
     },
     "results/dashboard/peaks.parquet": {
       "bytes": 35438,
@@ -454,8 +454,8 @@
       "sha256": "89a2e90bfba2a10b9b75def1c4d31b81f705c5b32dec32632a477693515c9e6d"
     },
     "workflow/dashboard_bundle.py": {
-      "bytes": 5705,
-      "sha256": "c61378519d84b1cd33a0eaf8f1811ec4cf0caa011ad8f558a48dd41f5b422dd3"
+      "bytes": 5870,
+      "sha256": "e3c0629d29d7d914d20b219c62e7fb6c88c7edf542d7351643fdd9f87ab99b8c"
     },
     "workflow/image_processing/__init__.py": {
       "bytes": 82,

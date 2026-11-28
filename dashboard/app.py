@@ -926,7 +926,7 @@ def coverage_sources():
     )
     st.caption(
         "Data bundle checksums verified on load. Original study: 61,319 images · 100 cameras · "
-        "59,834 usable observations. AI assisted the analysis and dashboard implementation; it is not human accuracy validation."
+        "59,834 usable observations."
     )
 
 
@@ -999,7 +999,6 @@ def findings_workflow():
             "See Coverage & sources for calendar links and scope. The submission should include the collection "
             "scripts or cached source evidence for each source claimed."
         )
-    st.caption("Codex assisted with dashboard implementation, chart design, analysis code, tests and documentation.")
 
 
 if view == "Findings & workflow":

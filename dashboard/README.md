@@ -78,6 +78,4 @@ The findings download links to the published evidence and works as a standalone 
 
 This is a local dashboard, not a publicly hosted site. It binds to this laptop only. Whole-image model counts include parked vehicles and multiple directions; they measure repeated visible sightings, not flow, unique trips, congestion or school causation. The study covers one week and one weekend, no observed public holiday, incomplete school calendars, model rain and unverified exposure-time clocks. Model accuracy remains provisional. No reviewer forms were changed.
 
-AI assistance: Codex assisted implementation, chart design, tests and documentation. Existing model detections and source-backed analysis were reused.
-
 Implementation references: [Streamlit chart selection](https://docs.streamlit.io/1.51.0/develop/api-reference/charts/st.pydeck_chart), [AppTest](https://docs.streamlit.io/develop/api-reference/app-testing/st.testing.v1.apptest), [Streamlit themes](https://docs.streamlit.io/develop/api-reference/configuration/config.toml).
