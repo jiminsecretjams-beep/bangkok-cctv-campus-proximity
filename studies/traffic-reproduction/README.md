@@ -6,7 +6,7 @@ The main result is a larger weekday morning count in the same camera views: **+6
 
 ## Run the reproduced dashboard
 
-This companion folder contains the rebuild workflow contributed in [Panyawat’s fork](https://github.com/Panyawat-Phothiphanich/bangkok-cctv-campus-proximity/tree/b7536c7ff77782e68d03004e9c7564516f1cbd9a/archive/traffic-study-20261122). For the course presentation dashboard, see the [project quick start](../../README.md#try-the-dashboard).
+Use the [project quick start](../../README.md#try-the-dashboard) to open the course presentation dashboard.
 
 Install [uv](https://docs.astral.sh/uv/getting-started/installation/) and run from the root of this repository:
 

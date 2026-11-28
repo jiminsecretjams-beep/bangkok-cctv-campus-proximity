@@ -29,7 +29,7 @@ Teammates reviewed **40 matched morning frames**. Manual counts were higher on w
 - [School traffic rebuild](studies/traffic-reproduction/README.md) recreates the hourly tables, calendar joins, charts, and dashboard data from saved counts and documented inputs.
 - [Camera reliability study](studies/camera-reliability/README.md) looks at missing, frozen, and unusable snapshots during the same week. It includes the five-question report and a CPU-only rebuild command.
 
-Both workflows were contributed through [Panyawat’s fork](https://github.com/Panyawat-Phothiphanich/bangkok-cctv-campus-proximity/tree/b7536c7ff77782e68d03004e9c7564516f1cbd9a). The dashboard quick start above opens the school traffic presentation app.
+The dashboard quick start above opens the school traffic presentation app.
 
 ## Where everything is
 

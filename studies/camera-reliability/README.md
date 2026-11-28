@@ -4,7 +4,7 @@ We analysed one week of snapshots from 100 Bangkok traffic cameras, 25–31 Augu
 
 **[Read the five-question report](results/CCTV_Failures_Five_Questions.pdf)** · [See the calculated numbers](results/summary.json)
 
-The strongest pattern is a large interruption affecting many cameras together, followed by persistent freezes on a few feeds. The faulty equipment remains unknown. This companion study comes from [Panyawat’s fork](https://github.com/Panyawat-Phothiphanich/bangkok-cctv-campus-proximity/tree/b7536c7ff77782e68d03004e9c7564516f1cbd9a).
+The strongest pattern is a large interruption affecting many cameras together, followed by persistent freezes on a few feeds. The faulty equipment remains unknown.
 
 ## Recreate the report
 
